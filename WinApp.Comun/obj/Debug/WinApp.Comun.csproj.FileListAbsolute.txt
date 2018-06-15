@@ -1,0 +1,18 @@
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\bin\Debug\WinApp.Comun.dll
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\bin\Debug\WinApp.Comun.pdb
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.csproj.CoreCompileInputs.cache
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.dll
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.pdb
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\bin\Debug\WinApp.Comun.dll
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\bin\Debug\WinApp.Comun.pdb
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.csprojResolveAssemblyReference.cache
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.csproj.CoreCompileInputs.cache
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.dll
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.pdb
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.csprojResolveAssemblyReference.cache
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Comun\bin\Debug\WinApp.Comun.dll
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Comun\bin\Debug\WinApp.Comun.pdb
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.csprojResolveAssemblyReference.cache
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.csproj.CoreCompileInputs.cache
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.dll
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.pdb

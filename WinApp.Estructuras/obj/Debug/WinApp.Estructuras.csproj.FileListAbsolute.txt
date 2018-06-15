@@ -1,0 +1,24 @@
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Estructuras\bin\Debug\WinApp.Estructuras.dll
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Estructuras\bin\Debug\WinApp.Estructuras.pdb
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Estructuras\bin\Debug\WinApp.Comun.dll
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Estructuras\bin\Debug\WinApp.Comun.pdb
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Estructuras\obj\Debug\WinApp.Estructuras.csprojResolveAssemblyReference.cache
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Estructuras\obj\Debug\WinApp.Estructuras.csproj.CoreCompileInputs.cache
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Estructuras\obj\Debug\WinApp.Estructuras.dll
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Estructuras\obj\Debug\WinApp.Estructuras.pdb
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Estructuras\bin\Debug\WinApp.Estructuras.dll
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Estructuras\bin\Debug\WinApp.Estructuras.pdb
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Estructuras\bin\Debug\WinApp.Comun.dll
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Estructuras\bin\Debug\WinApp.Comun.pdb
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Estructuras\obj\Debug\WinApp.Estructuras.csprojResolveAssemblyReference.cache
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Estructuras\obj\Debug\WinApp.Estructuras.csproj.CoreCompileInputs.cache
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Estructuras\obj\Debug\WinApp.Estructuras.dll
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Estructuras\obj\Debug\WinApp.Estructuras.pdb
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Estructuras\bin\Debug\WinApp.Estructuras.dll
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Estructuras\bin\Debug\WinApp.Estructuras.pdb
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Estructuras\bin\Debug\WinApp.Comun.dll
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Estructuras\bin\Debug\WinApp.Comun.pdb
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Estructuras\obj\Debug\WinApp.Estructuras.csprojResolveAssemblyReference.cache
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Estructuras\obj\Debug\WinApp.Estructuras.csproj.CoreCompileInputs.cache
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Estructuras\obj\Debug\WinApp.Estructuras.dll
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Estructuras\obj\Debug\WinApp.Estructuras.pdb

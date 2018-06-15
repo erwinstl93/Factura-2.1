@@ -1,0 +1,24 @@
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\Comun.Dto\bin\Debug\WinApp.Comun.Dto.dll
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\Comun.Dto\bin\Debug\WinApp.Comun.Dto.pdb
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\Comun.Dto\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\Comun.Dto\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\Comun.Dto\obj\Debug\WinApp.Comun.Dto.csproj.CoreCompileInputs.cache
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\Comun.Dto\obj\Debug\WinApp.Comun.Dto.dll
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\Comun.Dto\obj\Debug\WinApp.Comun.Dto.pdb
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\Comun.Dto\bin\Debug\WinApp.Comun.Dto.dll
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\Comun.Dto\bin\Debug\WinApp.Comun.Dto.pdb
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\Comun.Dto\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\Comun.Dto\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\Comun.Dto\obj\Debug\WinApp.Comun.Dto.csprojResolveAssemblyReference.cache
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\Comun.Dto\obj\Debug\WinApp.Comun.Dto.csproj.CoreCompileInputs.cache
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\Comun.Dto\obj\Debug\WinApp.Comun.Dto.dll
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\Comun.Dto\obj\Debug\WinApp.Comun.Dto.pdb
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\Comun.Dto\obj\Debug\WinApp.Comun.Dto.csprojResolveAssemblyReference.cache
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\Comun.Dto\bin\Debug\WinApp.Comun.Dto.dll
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\Comun.Dto\bin\Debug\WinApp.Comun.Dto.pdb
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\Comun.Dto\bin\Debug\Newtonsoft.Json.dll
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\Comun.Dto\bin\Debug\Newtonsoft.Json.xml
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\Comun.Dto\obj\Debug\WinApp.Comun.Dto.csprojResolveAssemblyReference.cache
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\Comun.Dto\obj\Debug\WinApp.Comun.Dto.csproj.CoreCompileInputs.cache
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\Comun.Dto\obj\Debug\WinApp.Comun.Dto.dll
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\Comun.Dto\obj\Debug\WinApp.Comun.Dto.pdb

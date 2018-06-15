@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4B1F35F8-48B6-4C05-9F0C-F1F1E8B839FF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WinApp.API</RootNamespace>
+    <AssemblyName>WinApp.API</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConsultarTicket.cs" />
+    <Compile Include="EnviarDocumento.cs" />
+    <Compile Include="EnviarResumen.cs" />
+    <Compile Include="Firmar.cs" />
+    <Compile Include="GenerarComunicacionBaja.cs" />
+    <Compile Include="GenerarFactura.cs" />
+    <Compile Include="GenerarGuiaRemision.cs" />
+    <Compile Include="GenerarNotaCredito.cs" />
+    <Compile Include="GenerarNotaDedito.cs" />
+    <Compile Include="GenerarPercepcion.cs" />
+    <Compile Include="GenerarResumenDiario.cs" />
+    <Compile Include="GenerarRetencion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnityConfig.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Comun.Dto\WinApp.Comun.Dto.csproj">
+      <Project>{90def2f2-ac7f-45c9-bcbc-88c4834200b9}</Project>
+      <Name>WinApp.Comun.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinApp.Comun\WinApp.Comun.csproj">
+      <Project>{28057352-93ab-4200-8716-dc9b2e095dbb}</Project>
+      <Name>WinApp.Comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinApp.Firmado\WinApp.Firmado.csproj">
+      <Project>{7b12f2ae-cec5-489a-bcb5-b7e2b69d225a}</Project>
+      <Name>WinApp.Firmado</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinApp.Servicio.Soap\WinApp.Servicio.Soap.csproj">
+      <Project>{c75eefc6-0bb7-43fd-abe0-104622bd097a}</Project>
+      <Name>WinApp.Servicio.Soap</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinApp.Servicio\WinApp.Servicio.csproj">
+      <Project>{40c8e308-d848-4593-b39c-711fcc74aa6e}</Project>
+      <Name>WinApp.Servicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinApp.Xml\WinApp.Xml.csproj">
+      <Project>{f8e55b7b-7789-48af-830e-d8883beb3a9a}</Project>
+      <Name>WinApp.Xml</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

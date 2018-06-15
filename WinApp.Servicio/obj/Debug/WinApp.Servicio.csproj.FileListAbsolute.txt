@@ -1,0 +1,21 @@
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Servicio\bin\Debug\WinApp.Servicio.dll.config
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Servicio\bin\Debug\WinApp.Servicio.dll
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Servicio\bin\Debug\WinApp.Servicio.pdb
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Servicio\obj\Debug\WinApp.Servicio.csproj.CoreCompileInputs.cache
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Servicio\obj\Debug\WinApp.Servicio.dll
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Servicio\obj\Debug\WinApp.Servicio.pdb
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Servicio\bin\Debug\WinApp.Servicio.dll.config
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Servicio\bin\Debug\WinApp.Servicio.dll
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Servicio\bin\Debug\WinApp.Servicio.pdb
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Servicio\obj\Debug\WinApp.Servicio.csprojResolveAssemblyReference.cache
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Servicio\obj\Debug\WinApp.Servicio.csproj.CoreCompileInputs.cache
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Servicio\obj\Debug\WinApp.Servicio.dll
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Servicio\obj\Debug\WinApp.Servicio.pdb
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Servicio\obj\Debug\WinApp.Servicio.csprojResolveAssemblyReference.cache
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Servicio\bin\Debug\WinApp.Servicio.dll.config
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Servicio\bin\Debug\WinApp.Servicio.dll
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Servicio\bin\Debug\WinApp.Servicio.pdb
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Servicio\obj\Debug\WinApp.Servicio.csprojResolveAssemblyReference.cache
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Servicio\obj\Debug\WinApp.Servicio.csproj.CoreCompileInputs.cache
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Servicio\obj\Debug\WinApp.Servicio.dll
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Servicio\obj\Debug\WinApp.Servicio.pdb

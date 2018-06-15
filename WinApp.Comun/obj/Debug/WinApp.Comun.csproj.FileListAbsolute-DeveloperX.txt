@@ -1,0 +1,12 @@
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\bin\Debug\WinApp.Comun.dll
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\bin\Debug\WinApp.Comun.pdb
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.csprojResolveAssemblyReference.cache
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.csproj.CoreCompileInputs.cache
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.dll
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.pdb
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\bin\Debug\WinApp.Comun.dll
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\bin\Debug\WinApp.Comun.pdb
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.csprojResolveAssemblyReference.cache
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.csproj.CoreCompileInputs.cache
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.dll
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.pdb

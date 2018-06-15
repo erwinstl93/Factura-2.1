@@ -1,0 +1,42 @@
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Firmado.dll
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Firmado.pdb
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\bin\Debug\DotNetZip.dll
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Comun.dll
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Comun.pdb
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\bin\Debug\DotNetZip.xml
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\obj\Debug\WinApp.Firmado.csprojResolveAssemblyReference.cache
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\obj\Debug\WinApp.Firmado.csproj.CoreCompileInputs.cache
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\obj\Debug\WinApp.Firmado.dll
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\obj\Debug\WinApp.Firmado.pdb
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Firmado.dll
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Firmado.pdb
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\bin\Debug\DotNetZip.dll
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Comun.dll
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Comun.Dto.dll
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Comun.Dto.pdb
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Comun.pdb
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\bin\Debug\DotNetZip.xml
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\obj\Debug\WinApp.Firmado.csprojResolveAssemblyReference.cache
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\obj\Debug\WinApp.Firmado.csproj.CoreCompileInputs.cache
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\obj\Debug\WinApp.Firmado.dll
+C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\obj\Debug\WinApp.Firmado.pdb
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Comun.Dto.dll
+C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Comun.Dto.pdb
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Firmado.dll
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Firmado.pdb
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Firmado\bin\Debug\DotNetZip.dll
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Comun.dll
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Comun.Dto.dll
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Firmado\bin\Debug\Newtonsoft.Json.dll
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Comun.Dto.pdb
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Comun.pdb
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Firmado\bin\Debug\DotNetZip.xml
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Firmado\bin\Debug\Newtonsoft.Json.xml
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Firmado\obj\Debug\WinApp.Firmado.csprojResolveAssemblyReference.cache
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Firmado\obj\Debug\WinApp.Firmado.csproj.CoreCompileInputs.cache
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Firmado\obj\Debug\WinApp.Firmado.dll
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Firmado\obj\Debug\WinApp.Firmado.pdb
