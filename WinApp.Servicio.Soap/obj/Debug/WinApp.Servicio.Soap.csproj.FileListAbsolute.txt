@@ -22,16 +22,6 @@ C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Servicio.Soap\
 C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Servicio.Soap\obj\Debug\WinApp.Servicio.Soap.csproj.CoreCompileInputs.cache
 C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Servicio.Soap\obj\Debug\WinApp.Servicio.Soap.dll
 C:\Users\Developer\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp.Servicio.Soap\obj\Debug\WinApp.Servicio.Soap.pdb
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Servicio.Soap\bin\Debug\WinApp.Servicio.Soap.dll.config
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Servicio.Soap\bin\Debug\WinApp.Servicio.Soap.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Servicio.Soap\bin\Debug\WinApp.Servicio.Soap.pdb
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Servicio.Soap\bin\Debug\WinApp.Comun.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Servicio.Soap\bin\Debug\WinApp.Servicio.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Servicio.Soap\bin\Debug\WinApp.Comun.pdb
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Servicio.Soap\bin\Debug\WinApp.Servicio.pdb
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Servicio.Soap\obj\Debug\WinApp.Servicio.Soap.csprojResolveAssemblyReference.cache
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Servicio.Soap\obj\Debug\WinApp.Servicio.Soap.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Servicio.Soap\obj\Debug\WinApp.Servicio.Soap.pdb
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Servicio.Soap\bin\Debug\WinApp.Servicio.Soap.dll.config
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Servicio.Soap\bin\Debug\WinApp.Servicio.Soap.dll
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Servicio.Soap\bin\Debug\WinApp.Servicio.Soap.pdb
@@ -44,3 +34,13 @@ D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Servic
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Servicio.Soap\obj\Debug\WinApp.Servicio.Soap.csproj.CoreCompileInputs.cache
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Servicio.Soap\obj\Debug\WinApp.Servicio.Soap.dll
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Servicio.Soap\obj\Debug\WinApp.Servicio.Soap.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Servicio.Soap\bin\Debug\WinApp.Servicio.Soap.dll.config
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Servicio.Soap\bin\Debug\WinApp.Servicio.Soap.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Servicio.Soap\bin\Debug\WinApp.Servicio.Soap.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Servicio.Soap\bin\Debug\WinApp.Comun.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Servicio.Soap\bin\Debug\WinApp.Servicio.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Servicio.Soap\bin\Debug\WinApp.Comun.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Servicio.Soap\bin\Debug\WinApp.Servicio.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Servicio.Soap\obj\Debug\WinApp.Servicio.Soap.csprojResolveAssemblyReference.cache
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Servicio.Soap\obj\Debug\WinApp.Servicio.Soap.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Servicio.Soap\obj\Debug\WinApp.Servicio.Soap.pdb

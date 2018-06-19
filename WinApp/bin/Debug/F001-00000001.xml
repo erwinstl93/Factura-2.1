@@ -9,9 +9,9 @@
   <cbc:CustomizationID>2.0</cbc:CustomizationID>
   <cbc:ID>F001-00000001</cbc:ID>
   <cbc:IssueDate>2018-06-18</cbc:IssueDate>
-  <cbc:IssueTime>20:56:18</cbc:IssueTime>
+  <cbc:IssueTime>21:36:02</cbc:IssueTime>
   <cbc:DueDate>2018-06-18</cbc:DueDate>
-  <cbc:InvoiceTypeCode listID="0101" listAgencyName="PE:SUNAT" listName="SUNAT:Identificador de Tipo de Documento" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo01">01</cbc:InvoiceTypeCode>
+  <cbc:InvoiceTypeCode listID="0101" listAgencyName="PE:SUNAT" listName="PE:SUNAT" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo01">01</cbc:InvoiceTypeCode>
   <cbc:Note languageLocaleID="1000">CINCUENTA Y UNO MIL SETECIENTOS TREINTA Y UNO CON 20/100</cbc:Note>
   <cbc:DocumentCurrencyCode listID="ISO 4217 Alpha" listName="Currency" listAgencyName="United Nations Economic Commission for Europe">PEN</cbc:DocumentCurrencyCode>
   <cbc:LineCountNumeric>1</cbc:LineCountNumeric>

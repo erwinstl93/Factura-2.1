@@ -108,57 +108,6 @@ C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp\bin\Debug\Microsoft
 C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp\bin\Debug\Microsoft.Practices.ServiceLocation.xml
 C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp\obj\Debug\WinApp.FrmDocumento.resources
 C:\Users\Jose\OneDrive\Publiarte S.R.L\CPE\ProjectCPE\WinApp\obj\Debug\WinApp.FrmFormatos.resources
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.exe.config
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.exe
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.pdb
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\ComponentFactory.Krypton.Design.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\ComponentFactory.Krypton.Docking.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\ComponentFactory.Krypton.Navigator.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\ComponentFactory.Krypton.Workspace.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\EntityFramework.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.API.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Comun.Dto.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Datos.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Entidades.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Firmado.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Servicio.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Servicio.Soap.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\Newtonsoft.Json.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Xml.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Comun.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\Microsoft.Practices.Unity.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\DotNetZip.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Estructuras.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\Microsoft.Practices.ServiceLocation.dll
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Comun.Dto.pdb
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.API.pdb
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Datos.pdb
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Entidades.pdb
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Firmado.pdb
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Servicio.Soap.pdb
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Servicio.pdb
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\EntityFramework.xml
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\Newtonsoft.Json.xml
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Xml.pdb
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Comun.pdb
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\Microsoft.Practices.Unity.xml
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\DotNetZip.xml
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Estructuras.pdb
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\Microsoft.Practices.ServiceLocation.xml
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\obj\Debug\WinApp.csprojResolveAssemblyReference.cache
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\obj\Debug\WinApp.FrmDocumento.resources
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\obj\Debug\WinApp.FrmEnviarSunat.resources
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\obj\Debug\WinApp.FrmFormatos.resources
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\obj\Debug\WinApp.PlantillaBase.resources
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\obj\Debug\WinApp.Properties.Resources.resources
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\obj\Debug\WinApp.csproj.GenerateResource.Cache
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\obj\Debug\WinApp.exe
-C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\obj\Debug\WinApp.pdb
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp\bin\Debug\WinApp.exe.config
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp\bin\Debug\WinApp.exe
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp\bin\Debug\WinApp.pdb
@@ -214,3 +163,54 @@ D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp\obj\De
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp\obj\Debug\WinApp.csproj.CoreCompileInputs.cache
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp\obj\Debug\WinApp.exe
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp\obj\Debug\WinApp.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.exe.config
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.exe
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\ComponentFactory.Krypton.Design.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\ComponentFactory.Krypton.Docking.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\EntityFramework.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.API.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Comun.Dto.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Datos.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Entidades.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Firmado.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Servicio.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Servicio.Soap.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Xml.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Comun.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\DotNetZip.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Estructuras.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Comun.Dto.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.API.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Datos.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Entidades.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Firmado.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Servicio.Soap.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Servicio.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\EntityFramework.xml
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Xml.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Comun.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\DotNetZip.xml
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\WinApp.Estructuras.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\obj\Debug\WinApp.csprojResolveAssemblyReference.cache
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\obj\Debug\WinApp.FrmDocumento.resources
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\obj\Debug\WinApp.FrmEnviarSunat.resources
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\obj\Debug\WinApp.FrmFormatos.resources
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\obj\Debug\WinApp.PlantillaBase.resources
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\obj\Debug\WinApp.Properties.Resources.resources
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\obj\Debug\WinApp.csproj.GenerateResource.Cache
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\obj\Debug\WinApp.exe
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp\obj\Debug\WinApp.pdb

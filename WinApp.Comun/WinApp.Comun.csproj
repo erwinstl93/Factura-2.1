@@ -40,8 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constantes\DocumentCurrencyCode.cs" />
     <Compile Include="Constantes\EspacioNombres.cs" />
     <Compile Include="Constantes\Formatos.cs" />
+    <Compile Include="Constantes\InvoiceTypeCode.cs" />
+    <Compile Include="Constantes\PartyIdentification2.cs" />
     <Compile Include="Conversion.cs" />
     <Compile Include="IEstructuraXml.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

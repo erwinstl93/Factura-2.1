@@ -9,6 +9,7 @@ using WinApp.Estructuras.CommonAggregateComponents;
 using WinApp.Estructuras.CommonExtensionComponents;
 using WinApp.Estructuras.SunatAggregateComponents;
 
+
 namespace WinApp.Estructuras.EstandarUbl
 {
     [Serializable]
@@ -46,6 +47,9 @@ namespace WinApp.Estructuras.EstandarUbl
 
         public string CustomizationId { get; set; }
 
+        public InvoiceTypeCode InvoiceTypeCode2  { get; set;}
+        public DocumentCurrencyCode DocumentCurrencyCode2 { get; set; }
+        public PartyIdentification2 PartyIdentification2 { get; set; }
         public IFormatProvider Formato { get; set; }
         public string LineCountNumeric { get; set; }
         public Invoice()
@@ -62,6 +66,9 @@ namespace WinApp.Estructuras.EstandarUbl
             UblVersionId = "2.0";
             CustomizationId = "1.0";
             Formato = new System.Globalization.CultureInfo(Formatos.Cultura);
+            InvoiceTypeCode2 = new Comun.Constantes.InvoiceTypeCode();
+            DocumentCurrencyCode2 = new Comun.Constantes.DocumentCurrencyCode();
+            PartyIdentification2 = new PartyIdentification2();
         }
 
         public XmlSchema GetSchema()
@@ -120,9 +127,9 @@ namespace WinApp.Estructuras.EstandarUbl
 
             writer.WriteStartElement("cbc:InvoiceTypeCode");
             writer.WriteAttributeString("listID", ext2.SunatTransaction.Id); //Tipo de Venta Interna
-            writer.WriteAttributeString("listAgencyName", "PE:SUNAT");
-            writer.WriteAttributeString("listName", "SUNAT:Identificador de Tipo de Documento");
-            writer.WriteAttributeString("listURI", "urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo01");
+            writer.WriteAttributeString("listAgencyName",InvoiceTypeCode2.listAgencyName);
+            writer.WriteAttributeString("listName", InvoiceTypeCode2.listAgencyName);
+            writer.WriteAttributeString("listURI", InvoiceTypeCode2.listURI);
             writer.WriteValue(InvoiceTypeCode); //Tipo de Documento 03 Boleta - 01 Factura
             writer.WriteEndElement();
 
@@ -132,9 +139,9 @@ namespace WinApp.Estructuras.EstandarUbl
             writer.WriteEndElement();
 
             writer.WriteStartElement("cbc:DocumentCurrencyCode");
-            writer.WriteAttributeString("listID", "ISO 4217 Alpha");
-            writer.WriteAttributeString("listName", "Currency");
-            writer.WriteAttributeString("listAgencyName", "United Nations Economic Commission for Europe");
+            writer.WriteAttributeString("listID", DocumentCurrencyCode2.listID);
+            writer.WriteAttributeString("listName", DocumentCurrencyCode2.listName);
+            writer.WriteAttributeString("listAgencyName", DocumentCurrencyCode2.listAgencyName);
             writer.WriteValue(DocumentCurrencyCode);
             writer.WriteEndElement();
 
@@ -168,9 +175,7 @@ namespace WinApp.Estructuras.EstandarUbl
             #region PartyName
             writer.WriteStartElement("cac:PartyName");
 
-            //writer.WriteStartElement("cbc:Name");
-            //writer.WriteCData(Signature.SignatoryParty.PartyName.Name);
-            //writer.WriteEndElement();
+            
             writer.WriteElementString("cbc:Name", Signature.SignatoryParty.PartyName.Name);
 
             writer.WriteEndElement();
@@ -203,9 +208,9 @@ namespace WinApp.Estructuras.EstandarUbl
             writer.WriteStartElement("cac:PartyIdentification");
             writer.WriteStartElement("cbc:ID");
             writer.WriteAttributeString("schemeID", AccountingSupplierParty.AdditionalAccountId); //Codigo de identificacion de documento de contribuyente
-            writer.WriteAttributeString("schemeName", "SUNAT:Identificador de Documento de Identidad");
-            writer.WriteAttributeString("schemeAgencyName", "PE:SUNAT");
-            writer.WriteAttributeString("schemeURI", "urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06");
+            writer.WriteAttributeString("schemeName", PartyIdentification2.schemeName);
+            writer.WriteAttributeString("schemeAgencyName", InvoiceTypeCode2.listAgencyName);
+            writer.WriteAttributeString("schemeURI", PartyIdentification2.schemeURI);
             writer.WriteValue(AccountingSupplierParty.CustomerAssignedAccountId);
             writer.WriteEndElement();
             writer.WriteEndElement();
@@ -271,9 +276,9 @@ namespace WinApp.Estructuras.EstandarUbl
             writer.WriteStartElement("cac:PartyIdentification");
             writer.WriteStartElement("cbc:ID");
             writer.WriteAttributeString("schemeID", AccountingCustomerParty.AdditionalAccountId); //Codigo de identificacion de documento de cliente
-            writer.WriteAttributeString("schemeName", "SUNAT:Identificador de Documento de Identidad");
-            writer.WriteAttributeString("schemeAgencyName", "PE:SUNAT");
-            writer.WriteAttributeString("schemeURI", "urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06");
+            writer.WriteAttributeString("schemeName", PartyIdentification2.schemeName);
+            writer.WriteAttributeString("schemeAgencyName", InvoiceTypeCode2.listAgencyName);
+            writer.WriteAttributeString("schemeURI", PartyIdentification2.schemeURI);
             writer.WriteValue(AccountingCustomerParty.CustomerAssignedAccountId);
             writer.WriteEndElement();
             writer.WriteEndElement();
