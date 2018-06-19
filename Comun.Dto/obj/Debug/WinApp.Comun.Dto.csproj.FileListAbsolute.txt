@@ -22,3 +22,10 @@ D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\Comun.Dto\obj
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\Comun.Dto\obj\Debug\WinApp.Comun.Dto.csproj.CoreCompileInputs.cache
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\Comun.Dto\obj\Debug\WinApp.Comun.Dto.dll
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\Comun.Dto\obj\Debug\WinApp.Comun.Dto.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\Comun.Dto\bin\Debug\WinApp.Comun.Dto.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\Comun.Dto\bin\Debug\WinApp.Comun.Dto.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\Comun.Dto\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\Comun.Dto\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ERWIN\Desktop\ProjectCPE\Comun.Dto\obj\Debug\WinApp.Comun.Dto.csprojResolveAssemblyReference.cache
+C:\Users\ERWIN\Desktop\ProjectCPE\Comun.Dto\obj\Debug\WinApp.Comun.Dto.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\Comun.Dto\obj\Debug\WinApp.Comun.Dto.pdb

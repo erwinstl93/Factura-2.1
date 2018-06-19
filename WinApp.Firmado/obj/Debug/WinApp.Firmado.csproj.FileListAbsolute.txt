@@ -40,3 +40,16 @@ D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Firmad
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Firmado\obj\Debug\WinApp.Firmado.csproj.CoreCompileInputs.cache
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Firmado\obj\Debug\WinApp.Firmado.dll
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Firmado\obj\Debug\WinApp.Firmado.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Firmado.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Firmado.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Firmado\bin\Debug\DotNetZip.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Comun.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Comun.Dto.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Firmado\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Comun.Dto.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Firmado\bin\Debug\WinApp.Comun.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Firmado\bin\Debug\DotNetZip.xml
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Firmado\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Firmado\obj\Debug\WinApp.Firmado.csprojResolveAssemblyReference.cache
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Firmado\obj\Debug\WinApp.Firmado.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Firmado\obj\Debug\WinApp.Firmado.pdb

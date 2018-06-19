@@ -103,3 +103,35 @@ D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.API\ob
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.API\obj\Debug\WinApp.API.csproj.CoreCompileInputs.cache
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.API\obj\Debug\WinApp.API.dll
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.API\obj\Debug\WinApp.API.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\WinApp.API.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\WinApp.API.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\WinApp.Comun.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\WinApp.Comun.Dto.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\WinApp.Firmado.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\WinApp.Servicio.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\WinApp.Servicio.Soap.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\WinApp.Xml.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\DotNetZip.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\WinApp.Estructuras.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\WinApp.Comun.Dto.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\WinApp.Comun.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\WinApp.Firmado.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\WinApp.Servicio.Soap.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\WinApp.Servicio.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\WinApp.Xml.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\DotNetZip.xml
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\bin\Debug\WinApp.Estructuras.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\obj\Debug\WinApp.API.csprojResolveAssemblyReference.cache
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\obj\Debug\WinApp.API.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.API\obj\Debug\WinApp.API.pdb

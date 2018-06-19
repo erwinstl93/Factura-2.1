@@ -22,3 +22,10 @@ D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Estruc
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Estructuras\obj\Debug\WinApp.Estructuras.csproj.CoreCompileInputs.cache
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Estructuras\obj\Debug\WinApp.Estructuras.dll
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Estructuras\obj\Debug\WinApp.Estructuras.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Estructuras\bin\Debug\WinApp.Estructuras.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Estructuras\bin\Debug\WinApp.Estructuras.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Estructuras\bin\Debug\WinApp.Comun.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Estructuras\bin\Debug\WinApp.Comun.pdb
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Estructuras\obj\Debug\WinApp.Estructuras.csprojResolveAssemblyReference.cache
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Estructuras\obj\Debug\WinApp.Estructuras.dll
+C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Estructuras\obj\Debug\WinApp.Estructuras.pdb
