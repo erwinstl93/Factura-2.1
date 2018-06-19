@@ -46,6 +46,9 @@ namespace WinApp.Estructuras.EstandarUbl
         public List<InvoiceLine> CreditNoteLines { get; set; }
 
         public IFormatProvider Formato { get; set; }
+        public InvoiceTypeCode InvoiceTypeCode2 { get; set; }
+        public DocumentCurrencyCode DocumentCurrencyCode2 { get; set; }
+        public PartyIdentification2 PartyIdentification2 { get; set; }
 
         public CreditNote()
         {
@@ -60,9 +63,12 @@ namespace WinApp.Estructuras.EstandarUbl
             TaxTotals = new List<TaxTotal>();
             LegalMonetaryTotal = new LegalMonetaryTotal();
             CreditNoteLines = new List<InvoiceLine>();
-            UblVersionId = "2.0";
-            CustomizationId = "1.0";
+            UblVersionId = "2.1";
+            CustomizationId = "2.0";
             Formato = new System.Globalization.CultureInfo(Formatos.Cultura);
+            InvoiceTypeCode2 = new Comun.Constantes.InvoiceTypeCode();
+            DocumentCurrencyCode2 = new Comun.Constantes.DocumentCurrencyCode();
+            PartyIdentification2 = new PartyIdentification2();
         }
 
         public XmlSchema GetSchema()
@@ -87,7 +93,7 @@ namespace WinApp.Estructuras.EstandarUbl
             writer.WriteAttributeString("xmlns:sac", EspacioNombres.sac);
             writer.WriteAttributeString("xmlns:udt", EspacioNombres.udt);
             writer.WriteAttributeString("xmlns:xsi", EspacioNombres.xsi);
-
+            var ext2 = UblExtensions.Extension2.ExtensionContent.AdditionalInformation;
             #region UBLExtensions
 
             {
@@ -96,10 +102,10 @@ namespace WinApp.Estructuras.EstandarUbl
                 #region UBLExtension
 
                 {
-                    var ext2 = UblExtensions.Extension2.ExtensionContent.AdditionalInformation;
+                   
                     writer.WriteStartElement("ext:UBLExtension");
 
-                    #region ExtensionContent
+                   /* #region ExtensionContent
 
                     {
                         writer.WriteStartElement("ext:ExtensionContent");
@@ -163,7 +169,7 @@ namespace WinApp.Estructuras.EstandarUbl
                         writer.WriteEndElement();
                     }
 
-                    #endregion ExtensionContent
+                    #endregion ExtensionContent*/
 
                     writer.WriteEndElement();
                 }
@@ -201,6 +207,11 @@ namespace WinApp.Estructuras.EstandarUbl
             writer.WriteElementString("cbc:CustomizationID", CustomizationId);
             writer.WriteElementString("cbc:ID", Id);
             writer.WriteElementString("cbc:IssueDate", IssueDate.ToString("yyyy-MM-dd"));
+            writer.WriteElementString("cbc:IssueTime", String.Format("{0:HH:mm:ss}", DateTime.Now));
+            writer.WriteStartElement("cbc:Note");
+            writer.WriteAttributeString("languageLocaleID", "1000"); //1000 Monto en letras              
+            writer.WriteValue(ext2.AdditionalProperties[0].Value);
+            writer.WriteEndElement();
             writer.WriteElementString("cbc:DocumentCurrencyCode", DocumentCurrencyCode);
 
             #region DiscrepancyResponse
@@ -311,106 +322,110 @@ namespace WinApp.Estructuras.EstandarUbl
             #endregion Signature
 
             #region AccountingSupplierParty
-
             writer.WriteStartElement("cac:AccountingSupplierParty");
 
-            writer.WriteElementString("cbc:CustomerAssignedAccountID", AccountingSupplierParty.CustomerAssignedAccountId);
-            writer.WriteElementString("cbc:AdditionalAccountID",
-                AccountingSupplierParty.AdditionalAccountId);
 
             #region Party
-
             writer.WriteStartElement("cac:Party");
 
-            #region PartyName
+            #region PartyIdentification
+            writer.WriteStartElement("cac:PartyIdentification");
+            writer.WriteStartElement("cbc:ID");
+            writer.WriteAttributeString("schemeID", AccountingSupplierParty.AdditionalAccountId); //Codigo de identificacion de documento de contribuyente
+            writer.WriteAttributeString("schemeName", PartyIdentification2.schemeName);
+            writer.WriteAttributeString("schemeAgencyName", InvoiceTypeCode2.listAgencyName);
+            writer.WriteAttributeString("schemeURI", PartyIdentification2.schemeURI);
+            writer.WriteValue(AccountingSupplierParty.CustomerAssignedAccountId);
+            writer.WriteEndElement();
+            writer.WriteEndElement();
+            #endregion PartyIdentification
 
+            #region PartyName
             writer.WriteStartElement("cac:PartyName");
 
             writer.WriteStartElement("cbc:Name");
-            writer.WriteString(AccountingSupplierParty.Party.PartyName.Name);
+            writer.WriteCData(AccountingSupplierParty.Party.PartyLegalEntity.RegistrationName);
             writer.WriteEndElement();
 
             writer.WriteEndElement();
-
-            #endregion PartyName
+            #endregion
 
             #region PostalAddress
-
-            writer.WriteStartElement("cac:PostalAddress");
-            writer.WriteElementString("cbc:ID", AccountingSupplierParty.Party.PostalAddress.Id);
+            /*writer.WriteStartElement("cac:PostalAddress");
+            writer.WriteElementString("cbc:ID", AccountingSupplierParty.Party.PostalAddress.ID);
             writer.WriteElementString("cbc:StreetName", AccountingSupplierParty.Party.PostalAddress.StreetName);
-            writer.WriteElementString("cbc:CitySubdivisionName", AccountingSupplierParty.Party.PostalAddress.CitySubdivisionName);
+            if (!string.IsNullOrEmpty(AccountingSupplierParty.Party.PostalAddress.CitySubdivisionName))
+                writer.WriteElementString("cbc:CitySubdivisionName", AccountingSupplierParty.Party.PostalAddress.CitySubdivisionName);
             writer.WriteElementString("cbc:CityName", AccountingSupplierParty.Party.PostalAddress.CityName);
             writer.WriteElementString("cbc:CountrySubentity", AccountingSupplierParty.Party.PostalAddress.CountrySubentity);
             writer.WriteElementString("cbc:District", AccountingSupplierParty.Party.PostalAddress.District);
 
             #region Country
-
             writer.WriteStartElement("cac:Country");
             writer.WriteElementString("cbc:IdentificationCode",
                 AccountingSupplierParty.Party.PostalAddress.Country.IdentificationCode);
             writer.WriteEndElement();
+            #endregion
 
-            #endregion Country
-
-            writer.WriteEndElement();
-
-            #endregion PostalAddress
+            writer.WriteEndElement();*/
+            #endregion
 
             #region PartyLegalEntity
-
             writer.WriteStartElement("cac:PartyLegalEntity");
-
             writer.WriteStartElement("cbc:RegistrationName");
-            writer.WriteString(AccountingSupplierParty.Party.PartyLegalEntity.RegistrationName);
+            writer.WriteCData(AccountingSupplierParty.Party.PartyLegalEntity.RegistrationName);
+            writer.WriteEndElement();
+
+            writer.WriteStartElement("cac:RegistrationAddress");
+            writer.WriteElementString("cbc:AddressTypeCode", "0000"); //Código del domicilio fiscal sunat
             writer.WriteEndElement();
 
             writer.WriteEndElement();
-
-            #endregion PartyLegalEntity
-
-            writer.WriteEndElement();
-
-            #endregion Party
+            #endregion
 
             writer.WriteEndElement();
+            #endregion
 
-            #endregion AccountingSupplierParty
+            writer.WriteEndElement();
+            #endregion
 
             #region AccountingCustomerParty
-
             writer.WriteStartElement("cac:AccountingCustomerParty");
 
-            writer.WriteElementString("cbc:CustomerAssignedAccountID", AccountingCustomerParty.CustomerAssignedAccountId);
-            writer.WriteElementString("cbc:AdditionalAccountID",
-                AccountingCustomerParty.AdditionalAccountId);
 
             #region Party
-
             writer.WriteStartElement("cac:Party");
 
-            #region cbc:PartyLegalEntity
+            #region PartyIdentification
+            writer.WriteStartElement("cac:PartyIdentification");
+            writer.WriteStartElement("cbc:ID");
+            writer.WriteAttributeString("schemeID", AccountingCustomerParty.AdditionalAccountId); //Codigo de identificacion de documento de cliente
+            writer.WriteAttributeString("schemeName", PartyIdentification2.schemeName);
+            writer.WriteAttributeString("schemeAgencyName", InvoiceTypeCode2.listAgencyName);
+            writer.WriteAttributeString("schemeURI", PartyIdentification2.schemeURI);
+            writer.WriteValue(AccountingCustomerParty.CustomerAssignedAccountId);
+            writer.WriteEndElement();
+            writer.WriteEndElement();
+            #endregion PartyIdentification
 
+
+            #region cbc:PartyLegalEntity
             writer.WriteStartElement("cac:PartyLegalEntity");
 
             writer.WriteStartElement("cbc:RegistrationName");
-            writer.WriteString(AccountingCustomerParty.Party.PartyLegalEntity.RegistrationName);
+            writer.WriteCData(AccountingCustomerParty.Party.PartyLegalEntity.RegistrationName);
             writer.WriteEndElement();
 
             writer.WriteEndElement();
-
-            #endregion cbc:PartyLegalEntity
-
-            writer.WriteEndElement();
-
-            #endregion Party
+            #endregion
 
             writer.WriteEndElement();
+            #endregion
 
-            #endregion AccountingCustomerParty
+            writer.WriteEndElement();
+            #endregion
 
             #region TaxTotal
-
             foreach (var taxTotal in TaxTotals)
             {
                 writer.WriteStartElement("cac:TaxTotal");
@@ -421,9 +436,13 @@ namespace WinApp.Estructuras.EstandarUbl
                 writer.WriteEndElement();
 
                 #region TaxSubtotal
-
                 {
                     writer.WriteStartElement("cac:TaxSubtotal");
+
+                    writer.WriteStartElement("cbc:TaxableAmount");
+                    writer.WriteAttributeString("currencyID", taxTotal.TaxableAmount.CurrencyId);
+                    writer.WriteString(taxTotal.TaxableAmount.Value.ToString(Formatos.FormatoNumerico, Formato));
+                    writer.WriteEndElement();
 
                     writer.WriteStartElement("cbc:TaxAmount");
                     writer.WriteAttributeString("currencyID", taxTotal.TaxSubtotal.TaxAmount.CurrencyId);
@@ -433,49 +452,70 @@ namespace WinApp.Estructuras.EstandarUbl
                     #region TaxCategory
 
                     {
-                        writer.WriteStartElement("cac:TaxCategory");
+                        writer.WriteStartElement("cac:TaxCategory");                       
 
                         #region TaxScheme
-
                         {
                             writer.WriteStartElement("cac:TaxScheme");
 
-                            writer.WriteElementString("cbc:ID", taxTotal.TaxSubtotal.TaxCategory.TaxScheme.Id);
+                            writer.WriteStartElement("cbc:ID");
+                            writer.WriteAttributeString("schemeID", "UN/ECE 5153");
+                            writer.WriteAttributeString("schemeAgencyID", "6");
+                            writer.WriteValue(taxTotal.TaxSubtotal.TaxCategory.TaxScheme.Id);
+                            writer.WriteEndElement();
+
                             writer.WriteElementString("cbc:Name", taxTotal.TaxSubtotal.TaxCategory.TaxScheme.Name);
                             writer.WriteElementString("cbc:TaxTypeCode", taxTotal.TaxSubtotal.TaxCategory.TaxScheme.TaxTypeCode);
 
                             writer.WriteEndElement();
                         }
-
-                        #endregion TaxScheme
+                        #endregion
 
                         writer.WriteEndElement();
                     }
-
-                    #endregion TaxCategory
+                    #endregion
 
                     writer.WriteEndElement();
                 }
-
-                #endregion TaxSubtotal
+                #endregion
 
                 writer.WriteEndElement();
             }
+            #endregion
 
-            #endregion TaxTotal
 
             #region LegalMonetaryTotal
-
             writer.WriteStartElement("cac:LegalMonetaryTotal");
+            {
+                //Descuento
+                if (LegalMonetaryTotal.AllowanceTotalAmount.Value > 0)
+                {
+                    writer.WriteStartElement("cbc:AllowanceTotalAmount");
+                    {
+                        writer.WriteAttributeString("currencyID", LegalMonetaryTotal.AllowanceTotalAmount.CurrencyId);
+                        writer.WriteValue(LegalMonetaryTotal.AllowanceTotalAmount.Value.ToString(Formatos.FormatoNumerico, Formato));
+                    }
+                    writer.WriteEndElement();
+                }
+                if (LegalMonetaryTotal.PrepaidAmount.Value > 0)
+                {
+                    writer.WriteStartElement("cbc:PrepaidAmount");
+                    {
+                        writer.WriteAttributeString("currencyID", LegalMonetaryTotal.PrepaidAmount.CurrencyId);
+                        writer.WriteValue(LegalMonetaryTotal.PrepaidAmount.Value.ToString(Formatos.FormatoNumerico, Formato));
+                    }
+                    writer.WriteEndElement();
+                }
+                writer.WriteStartElement("cbc:PayableAmount");
+                {
+                    writer.WriteAttributeString("currencyID", LegalMonetaryTotal.PayableAmount.CurrencyId);
+                    writer.WriteValue(LegalMonetaryTotal.PayableAmount.Value.ToString(Formatos.FormatoNumerico, Formato));
+                }
+                writer.WriteEndElement();
 
-            writer.WriteStartElement("cbc:PayableAmount");
-            writer.WriteAttributeString("currencyID", LegalMonetaryTotal.PayableAmount.CurrencyId);
-            writer.WriteValue(LegalMonetaryTotal.PayableAmount.Value.ToString(Formatos.FormatoNumerico, Formato));
+            }
             writer.WriteEndElement();
-
-            writer.WriteEndElement();
-
-            #endregion LegalMonetaryTotal
+            #endregion
 
             #region CreditNoteLines
 
@@ -598,6 +638,7 @@ namespace WinApp.Estructuras.EstandarUbl
 
                         writer.WriteStartElement("cac:TaxCategory");
                         //writer.WriteElementString("cbc:ID", invoiceLine.TaxTotal.TaxSubtotal.TaxCategory.ID);
+                        writer.WriteElementString("cbc:Percent", ext2.AdditionalMonetaryTotals[1].Percent.ToString(Formatos.FormatoNumerico, Formato));
                         writer.WriteElementString("cbc:TaxExemptionReasonCode", taxTotal.TaxSubtotal.TaxCategory.TaxExemptionReasonCode);
                         if (!string.IsNullOrEmpty(taxTotal.TaxSubtotal.TaxCategory.TierRange))
                             writer.WriteElementString("cbc:TierRange", taxTotal.TaxSubtotal.TaxCategory.TierRange);

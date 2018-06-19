@@ -42,6 +42,9 @@ namespace WinApp.Xml
                                             CurrencyId = documento.Moneda,
                                             Value = documento.Gravadas
                                         }
+                                    },
+                                     new AdditionalMonetaryTotal {
+                                        Percent= (documento.CalculoIgv * 100)
                                     }
                                 },
                                 AdditionalProperties = new List<AdditionalProperty>()
@@ -136,8 +139,8 @@ namespace WinApp.Xml
                         }
                     }
                 },
-                UblVersionId = "2.0",
-                CustomizationId = "1.0",
+                UblVersionId = "2.1",
+                CustomizationId = "2.0",
                 LegalMonetaryTotal = new LegalMonetaryTotal
                 {
                     PayableAmount = new PayableAmount
@@ -155,6 +158,10 @@ namespace WinApp.Xml
                 {
                     new TaxTotal
                     {
+                        TaxableAmount = new PayableAmount{
+                            CurrencyId=documento.Moneda,
+                            Value=documento.Gravadas
+                        },
                         TaxAmount = new PayableAmount
                         {
                             CurrencyId = documento.Moneda,
@@ -229,7 +236,8 @@ namespace WinApp.Xml
                     },
                     PricingReference = new PricingReference
                     {
-                        AlternativeConditionPrices = new List<AlternativeConditionPrice>()
+                        AlternativeConditionPrices = new List<AlternativeConditionPrice>(),
+                        
                     },
                     Item = new Item
                     {
@@ -246,6 +254,7 @@ namespace WinApp.Xml
                             CurrencyId = documento.Moneda,
                             Value = detalleDocumento.PrecioUnitario
                         }
+                       
                     },
                 };
                 /* 16 - Afectación al IGV por ítem */
@@ -255,6 +264,12 @@ namespace WinApp.Xml
                     {
                         CurrencyId = documento.Moneda,
                         Value = detalleDocumento.Impuesto
+                    },
+                    //Agregado para la nueva version
+                    TaxableAmount = new PayableAmount
+                    {
+                        CurrencyId = documento.Moneda,
+                        Value = detalleDocumento.TotalVenta
                     },
                     TaxSubtotal = new TaxSubtotal
                     {

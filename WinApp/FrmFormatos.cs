@@ -180,23 +180,23 @@ namespace WinApp
             var dtsItems = new DetalleDocumento
             {
                 Id = 1,
-                Cantidad = 1,
+                Cantidad = 2000,
                 UnidadMedida = "NIU",
                 CodigoItem = "COD001",
                 Descripcion = "PRODUCTO PRUEBA",
-                PrecioUnitario = 10.50m,
-                PrecioReferencial = 0,
+                PrecioUnitario = 21.92m,
+                PrecioReferencial = 25.86m,
                 TipoPrecio = "01",
                 TipoImpuesto = "10",
                 OtroImpuesto = 0,
                 Descuento = 0,
-                Suma = 1 * 10.50m, //_detalle.PrecioUnitario * _detalle.Cantidad
-                Impuesto = (1 * 10.50m) * _documento.CalculoIgv, //_detalle.Suma * _documento.CalculoIgv
+                Suma = 2000 * 21.92m, //_detalle.PrecioUnitario * _detalle.Cantidad
+                Impuesto = (2000 * 21.92m) * _documento.CalculoIgv, //_detalle.Suma * _documento.CalculoIgv
                 ImpuestoSelectivo = 0, //_detalle.Suma * _documento.CalculoIsc;
-                TotalVenta = (1 * 10.50m) - 0 //_detalle.Suma - _detalle.Descuento
+                TotalVenta = (2000 * 21.92m) - 0 //_detalle.Suma - _detalle.Descuento
             };
 
-            _documento.IdDocumento = "NC01-00000001";
+            _documento.IdDocumento = "FNC1-00000001";
             _documento.TipoDocumento = "07";
             _documento.Emisor = dtsEmisor;
             _documento.Receptor = dtsReceptor;
