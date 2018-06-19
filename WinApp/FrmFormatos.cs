@@ -44,23 +44,22 @@ namespace WinApp
         {
             var dtsEmisor = new Contribuyente()
             {
-                NroDocumento = "20525911129",
-                TipoDocumento = "06",
-                NombreLegal = "PUBLIARTE S.R.L",
-                NombreComercial = "",
-                Direccion = "JR. CALLAO NRO. 778 INT. 001 (AL LADO DE TALLER MECANICO)",
+                NroDocumento = "20525411401",
+                TipoDocumento = "6",
+                Direccion = "MZA. 228 LOTE. 06 ZONA INDUSTRIAL  PIURA - PIURA - PIURA",
                 Departamento = "PIURA",
                 Provincia = "PIURA",
                 Distrito = "PIURA",
-                Ubigeo = "190101",
-                Urbanizacion = ""
+                NombreLegal = "PIURAMAQ S.R.L.",
+                NombreComercial = "",
+                Ubigeo = "200101"
 
             };
 
             var dtsReceptor = new Contribuyente()
             {
                 NroDocumento = "47230861",
-                TipoDocumento = "01",
+                TipoDocumento = "1",
                 NombreLegal = "MEJIA MOSCOL JUAN JOSE",
                 NombreComercial = "",
                 Direccion = "JR. TUMBES NRO. 100 CENTRO PIURA (A 1 CUADRA DE AV. LIBERTAD CON BOLOGNESI)"
@@ -69,20 +68,20 @@ namespace WinApp
             var dtsItems = new DetalleDocumento
             {
                 Id = 1,
-                Cantidad = 2,
+                Cantidad = 2000,
                 UnidadMedida = "NIU",
                 CodigoItem = "COD001",
                 Descripcion = "PRODUCTO PRUEBA",
-                PrecioUnitario = 8.50m,
-                PrecioReferencial = 0,
+                PrecioUnitario =21.92m,
+                PrecioReferencial =25.86m,
                 TipoPrecio = "01",
                 TipoImpuesto = "10",
                 OtroImpuesto  = 0,
                 Descuento = 0,
-                Suma = 2 * 8.50m, //_detalle.PrecioUnitario * _detalle.Cantidad
-                Impuesto = (2 * 8.50m) * _documento.CalculoIgv, //_detalle.Suma * _documento.CalculoIgv
+                Suma = 2000 * 21.92m, //_detalle.PrecioUnitario * _detalle.Cantidad
+                Impuesto = (2000 * 21.92m) * _documento.CalculoIgv, //_detalle.Suma * _documento.CalculoIgv
                 ImpuestoSelectivo = 0, //_detalle.Suma * _documento.CalculoIsc;
-                TotalVenta = (2 * 8.50m) - 0 //_detalle.Suma - _detalle.Descuento
+                TotalVenta = (2000 * 21.92m) - 0 //_detalle.Suma - _detalle.Descuento
             };
 
             _documento.IdDocumento = "B001-00000001";
@@ -91,7 +90,7 @@ namespace WinApp
             _documento.Receptor = dtsReceptor;
             _documento.FechaEmision = DateTime.Today.ToShortDateString();
             _documento.Moneda = "PEN";
-            _documento.TipoOperacion = "01";
+            _documento.TipoOperacion = "0101";
             //Agregamos Detalle
             _documento.Items.Add(dtsItems);
             CalcularTotales();
@@ -101,16 +100,15 @@ namespace WinApp
         {
             var dtsEmisor = new Contribuyente()
             {
-                NroDocumento = "20525911129",
+                NroDocumento = "20525411401",
                 TipoDocumento = "6",
-                NombreLegal = "PUBLIARTE S.R.L",
-                NombreComercial = "",
-                Direccion = "JR. CALLAO NRO. 778 INT. 001 (AL LADO DE TALLER MECANICO)",
+                Direccion = "MZA. 228 LOTE. 06 ZONA INDUSTRIAL  PIURA - PIURA - PIURA",
                 Departamento = "PIURA",
                 Provincia = "PIURA",
                 Distrito = "PIURA",
-                Ubigeo = "190101",
-                Urbanizacion = ""
+                NombreLegal = "PIURAMAQ S.R.L.",
+                NombreComercial = "",
+                Ubigeo = "200101"
 
             };
 
@@ -126,20 +124,20 @@ namespace WinApp
             var dtsItems = new DetalleDocumento
             {
                 Id = 1,
-                Cantidad = 1,
+                Cantidad = 2000,
                 UnidadMedida = "NIU",
                 CodigoItem = "COD001",
                 Descripcion = "PRODUCTO PRUEBA",
-                PrecioUnitario = 10.50m,
-                PrecioReferencial = 0,
+                PrecioUnitario = 21.92m,
+                PrecioReferencial = 25.86m,
                 TipoPrecio = "01",
                 TipoImpuesto = "10",
                 OtroImpuesto = 0,
                 Descuento = 0,
-                Suma = 1 * 10.50m, //_detalle.PrecioUnitario * _detalle.Cantidad
-                Impuesto = (1 * 10.50m) * _documento.CalculoIgv, //_detalle.Suma * _documento.CalculoIgv
+                Suma = 2000 * 21.92m, //_detalle.PrecioUnitario * _detalle.Cantidad
+                Impuesto = (2000 * 21.92m) * _documento.CalculoIgv, //_detalle.Suma * _documento.CalculoIgv
                 ImpuestoSelectivo = 0, //_detalle.Suma * _documento.CalculoIsc;
-                TotalVenta = (1 * 10.50m) - 0 //_detalle.Suma - _detalle.Descuento
+                TotalVenta = (2000 * 21.92m) - 0 //_detalle.Suma - _detalle.Descuento
             };
 
             _documento.IdDocumento = "F001-00000001";
@@ -148,7 +146,7 @@ namespace WinApp
             _documento.Receptor = dtsReceptor;
             _documento.FechaEmision = DateTime.Today.ToShortDateString();
             _documento.Moneda = "PEN";
-            _documento.TipoOperacion = "01";
+            _documento.TipoOperacion = "0101"; //Venta interna
             //Agregamos Detalle
             _documento.Items.Add(dtsItems);
             CalcularTotales();
@@ -158,16 +156,15 @@ namespace WinApp
         {
             var dtsEmisor = new Contribuyente()
             {
-                NroDocumento = "20525911129",
-                TipoDocumento = "06",
-                NombreLegal = "PUBLIARTE S.R.L",
-                NombreComercial = "",
-                Direccion = "JR. CALLAO NRO. 778 INT. 001 (AL LADO DE TALLER MECANICO)",
+                NroDocumento = "20525411401",
+                TipoDocumento = "6",
+                Direccion = "MZA. 228 LOTE. 06 ZONA INDUSTRIAL  PIURA - PIURA - PIURA",
                 Departamento = "PIURA",
                 Provincia = "PIURA",
                 Distrito = "PIURA",
-                Ubigeo = "190101",
-                Urbanizacion = ""
+                NombreLegal = "PIURAMAQ S.R.L.",
+                NombreComercial = "",
+                Ubigeo = "200101"
 
             };
 
@@ -325,7 +322,7 @@ namespace WinApp
             _documento.Gratuitas = _documento.Items
                 .Where(d => d.TipoImpuesto.Contains("21"))
                 .Sum(d => d.Suma);
-
+            _documento.LineCountNumeric = Convert.ToString(_documento.Items.Count());
             // Cuando existe ISC se debe recalcular el IGV.
             if (_documento.TotalIsc > 0)
             {
@@ -432,14 +429,14 @@ namespace WinApp
         {
             try
             {
-                _documento.IdDocumento = "F001-00000001"; //Probar
+               // _documento.IdDocumento = "F001-00000001"; //Probar
 
                 if (string.IsNullOrEmpty(_documento.IdDocumento))
                 throw new InvalidOperationException("La Serie y el Correlativo no pueden estar vacíos");
 
-                //var tramaXmlSinFirma = Convert.ToBase64String(File.ReadAllBytes(RutaArchivo)); //Original
-                var tramaXmlSinFirma = Convert.ToBase64String(File.ReadAllBytes(@"D:\Valle\XML_SF\F001-00000001.xml"));
-
+                var tramaXmlSinFirma = Convert.ToBase64String(File.ReadAllBytes(RutaArchivo)); //Original
+                //var tramaXmlSinFirma = Convert.ToBase64String(File.ReadAllBytes(@"D:\Valle\XML_SF\F001-00000001.xml"));
+                
                 var firmadoRequest = new FirmadoRequest
                 {
                     TramaXmlSinFirma = tramaXmlSinFirma,
@@ -478,7 +475,7 @@ namespace WinApp
 
                 var enviarDocumentoRequest = new EnviarDocumentoRequest
                 {
-                    Ruc = "20525911129",
+                    Ruc = "20525411401",
                     UsuarioSol = "MODDATOS",
                     ClaveSol = "MODDATOS",
                     EndPointUrl = "https://e-beta.sunat.gob.pe/ol-ti-itcpfegem-beta/billService",

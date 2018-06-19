@@ -6,6 +6,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using WinApp.Comun.Constantes;
 using WinApp.Comun.Dto.Intercambio;
+using System.Text;
 
 namespace WinApp.Firmado
 {
@@ -18,6 +19,7 @@ namespace WinApp.Firmado
         /// <typeparam name="T">Clase a serializar</typeparam>
         /// <param name="objectToSerialize">Instancia de la Clase</param>
         /// <returns>Devuelve una cadena Base64 del archivo XML</returns>
+        private readonly string _encodingIso = "UTF-8";
         async Task<string> ISerializador.GenerarXml<T>(T objectToSerialize)
         {
             var task = Task.Factory.StartNew(() =>

@@ -87,7 +87,7 @@ namespace WinApp.Comun.Dto.Modelos
         public decimal CalculoIsc { get; set; }
 
         public decimal CalculoDetraccion { get; set; }
-
+        public string LineCountNumeric { get; set; }
         public DocumentoElectronico()
         {
             Emisor = new Contribuyente

@@ -65,6 +65,9 @@ namespace WinApp.Xml
                                             CurrencyId = documento.Moneda,
                                             Value = documento.Gratuitas
                                         }
+                                    },
+                                    new AdditionalMonetaryTotal {
+                                        Percent= (documento.CalculoIgv * 100)
                                     }
                                 },
                                 AdditionalProperties = new List<AdditionalProperty>()
@@ -83,6 +86,7 @@ namespace WinApp.Xml
                 IssueDate = DateTime.Parse(documento.FechaEmision),
                 InvoiceTypeCode = documento.TipoDocumento,
                 DocumentCurrencyCode = documento.Moneda,
+                LineCountNumeric = documento.LineCountNumeric,
                 Signature = new SignatureCac
                 {
                     Id = documento.IdDocumento,
@@ -169,6 +173,11 @@ namespace WinApp.Xml
                 {
                     new TaxTotal
                     {
+                        //Agregado para la nueva version
+                        TaxableAmount= new PayableAmount{
+                            CurrencyId=documento.Moneda,
+                            Value=documento.Gravadas
+                        },
                         TaxAmount = new PayableAmount
                         {
                             CurrencyId = documento.Moneda,
@@ -506,6 +515,12 @@ namespace WinApp.Xml
                     {
                         CurrencyId = documento.Moneda,
                         Value = detalleDocumento.Impuesto
+                    },
+                    //Agregado para la nueva version
+                    TaxableAmount = new PayableAmount
+                    {
+                        CurrencyId = documento.Moneda,
+                        Value = detalleDocumento.TotalVenta
                     },
                     TaxSubtotal = new TaxSubtotal
                     {

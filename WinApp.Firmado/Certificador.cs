@@ -32,7 +32,7 @@ namespace WinApp.Firmado
 
                 string resultado;
 
-                var betterBytes = Encoding.Convert(Encoding.UTF8,
+                var betterBytes = Encoding.Convert(Encoding.GetEncoding(Formatos.EncodingIso),
                     Encoding.GetEncoding(Formatos.EncodingIso),
                     Convert.FromBase64String(request.TramaXmlSinFirma));
 
@@ -41,7 +41,8 @@ namespace WinApp.Firmado
                     xmlDoc.PreserveWhitespace = false;
                     xmlDoc.Load(documento);
 
-                    var indiceNodo = request.UnSoloNodoExtension ? 0 : 1;
+                   
+                    var indiceNodo = 0;
 
                     var nodoExtension = xmlDoc.GetElementsByTagName("ExtensionContent", EspacioNombres.ext)
                         .Item(indiceNodo);
