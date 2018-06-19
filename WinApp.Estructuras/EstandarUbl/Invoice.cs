@@ -111,14 +111,7 @@ namespace WinApp.Estructuras.EstandarUbl
             #endregion
 
             writer.WriteElementString("cbc:UBLVersionID", UblVersionId);
-            writer.WriteElementString("cbc:CustomizationID", CustomizationId);
-
-            /*writer.WriteStartElement("cbc:ProfileID");
-            writer.WriteAttributeString("schemeName", "SUNAT:Identificador de Tipo de Operación");
-            writer.WriteAttributeString("schemeAgencyName", "PE:SUNAT");
-            writer.WriteAttributeString("schemeURI", "urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo51");
-            writer.WriteValue("0101"); //Tipo Operacion
-            writer.WriteEndElement();*/
+            writer.WriteElementString("cbc:CustomizationID", CustomizationId);      
 
             writer.WriteElementString("cbc:ID", Id);
             writer.WriteElementString("cbc:IssueDate", IssueDate.ToString("yyyy-MM-dd"));
@@ -135,7 +128,7 @@ namespace WinApp.Estructuras.EstandarUbl
 
             writer.WriteStartElement("cbc:Note");
             writer.WriteAttributeString("languageLocaleID", "1000"); //1000 Monto en letras              
-            writer.WriteValue("SETENTA Y UN MIL TRESCIENTOS CINCUENTICUATRO Y 99/100");
+            writer.WriteValue(ext2.AdditionalProperties[0].Value);
             writer.WriteEndElement();
 
             writer.WriteStartElement("cbc:DocumentCurrencyCode");
@@ -202,10 +195,7 @@ namespace WinApp.Estructuras.EstandarUbl
             #region AccountingSupplierParty
             writer.WriteStartElement("cac:AccountingSupplierParty");
 
-            /* writer.WriteElementString("cbc:CustomerAssignedAccountID", AccountingSupplierParty.CustomerAssignedAccountID);
-             writer.WriteElementString("cbc:AdditionalAccountID",
-                 AccountingSupplierParty.AdditionalAccountID);*/
-
+          
             #region Party
             writer.WriteStartElement("cac:Party");
 
