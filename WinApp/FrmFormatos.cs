@@ -171,7 +171,7 @@ namespace WinApp
             var dtsReceptor = new Contribuyente()
             {
                 NroDocumento = "10472308616",
-                TipoDocumento = "06",
+                TipoDocumento = "6",
                 NombreLegal = "MEJIA MOSCOL JUAN JOSE",
                 NombreComercial = "",
                 Direccion = "JR. TUMBES NRO. 100 CENTRO PIURA (A 1 CUADRA DE AV. LIBERTAD CON BOLOGNESI)"

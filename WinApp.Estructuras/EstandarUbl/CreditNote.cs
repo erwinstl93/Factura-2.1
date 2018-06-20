@@ -102,76 +102,7 @@ namespace WinApp.Estructuras.EstandarUbl
                 #region UBLExtension
 
                 {
-                   
-                    writer.WriteStartElement("ext:UBLExtension");
-
-                   /* #region ExtensionContent
-
-                    {
-                        writer.WriteStartElement("ext:ExtensionContent");
-
-                        #region AdditionalInformation
-
-                        {
-                            if (ext2.AdditionalMonetaryTotals.Count > 0)
-                                writer.WriteStartElement("sac:AdditionalInformation");
-
-                            #region AdditionalMonetaryTotal
-
-                            {
-                                foreach (var additionalMonetaryTotal in ext2.AdditionalMonetaryTotals)
-                                {
-                                    writer.WriteStartElement("sac:AdditionalMonetaryTotal");
-                                    writer.WriteElementString("cbc:ID", additionalMonetaryTotal.Id);
-
-                                    #region PayableAmount
-
-                                    {
-                                        writer.WriteStartElement("cbc:PayableAmount");
-                                        writer.WriteAttributeString("currencyID", additionalMonetaryTotal.PayableAmount.CurrencyId);
-                                        writer.WriteValue(additionalMonetaryTotal.PayableAmount.Value.ToString(Formatos.FormatoNumerico, Formato));
-                                        writer.WriteEndElement();
-                                    }
-
-                                    #endregion PayableAmount
-
-                                    writer.WriteEndElement();
-                                }
-                            }
-
-                            #endregion AdditionalMonetaryTotal
-
-                            #region AdditionalProperty
-
-                            {
-                                foreach (var additionalProperty in ext2.AdditionalProperties)
-                                {
-                                    writer.WriteStartElement("sac:AdditionalProperty");
-                                    writer.WriteElementString("cbc:ID", additionalProperty.Id);
-
-                                    #region Value
-
-                                    writer.WriteElementString("cbc:Value", additionalProperty.Value);
-
-                                    #endregion Value
-
-                                    writer.WriteEndElement();
-                                }
-                            }
-
-                            #endregion AdditionalProperty
-
-                            writer.WriteEndElement();
-                        }
-
-                        #endregion AdditionalInformation
-
-                        writer.WriteEndElement();
-                    }
-
-                    #endregion ExtensionContent*/
-
-                    writer.WriteEndElement();
+ 
                 }
 
                 #endregion UBLExtension
@@ -691,6 +622,19 @@ namespace WinApp.Estructuras.EstandarUbl
                 writer.WriteEndElement();
 
                 #endregion SellersItemIdentification
+
+
+                #region CommodityClassification
+                writer.WriteStartElement("cac:CommodityClassification");
+                writer.WriteStartElement("cbc:ItemClassificationCode");
+                writer.WriteAttributeString("listID", "UNSPSC"); //Codigo de identificacion de documento de cliente
+                writer.WriteAttributeString("listAgencyName", "GS1 US");
+                writer.WriteAttributeString("listName", "Item Classification");            
+                writer.WriteValue("82141601");//82141601-SERVICIOS FOTOGRAFICOS, MONTAJE Y ENMARCADO	82141602 - MONTAJE DE EXPOSICION DE ARTICULOS
+                writer.WriteEndElement();
+                writer.WriteEndElement();
+                #endregion CommodityClassification
+
 
                 writer.WriteEndElement();
 
