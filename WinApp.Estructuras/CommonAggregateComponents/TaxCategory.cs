@@ -12,7 +12,7 @@ namespace WinApp.Estructuras.CommonAggregateComponents
         public TaxScheme TaxScheme { get; set; }
 
         public string Id { get; set; }
-
+        public string Identifier { get; set; }
         public TaxCategory()
         {
             TaxScheme = new TaxScheme();

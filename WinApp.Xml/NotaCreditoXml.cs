@@ -224,6 +224,7 @@ namespace WinApp.Xml
                 var linea = new InvoiceLine
                 {
                     Id = detalleDocumento.Id,
+                    ItemClassificationCode = detalleDocumento.ItemClassificationCode,
                     CreditedQuantity = new InvoicedQuantity
                     {
                         UnitCode = detalleDocumento.UnidadMedida,
@@ -257,6 +258,16 @@ namespace WinApp.Xml
                        
                     },
                 };
+                linea.PricingReference.AlternativeConditionPrices.Add(new AlternativeConditionPrice
+                {
+                    PriceAmount = new PayableAmount
+                    {
+                        CurrencyId = documento.Moneda,
+                        // Comprobamos que sea una operacion gratuita.
+                        Value = documento.Gratuitas > 0 ? 0 : detalleDocumento.PrecioReferencial
+                    },
+                    PriceTypeCode = detalleDocumento.TipoPrecio
+                });
                 /* 16 - Afectación al IGV por ítem */
                 linea.TaxTotals.Add(new TaxTotal
                 {

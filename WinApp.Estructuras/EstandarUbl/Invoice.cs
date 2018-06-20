@@ -253,7 +253,7 @@ namespace WinApp.Estructuras.EstandarUbl
             writer.WriteEndElement();
 
             writer.WriteStartElement("cac:RegistrationAddress");
-            writer.WriteElementString("cbc:AddressTypeCode", "0000"); //Código del domicilio fiscal sunat
+            writer.WriteElementString("cbc:AddressTypeCode", AccountingSupplierParty.CodDomicilioFiscal); //Código del domicilio fiscal sunat
             writer.WriteEndElement();
 
             writer.WriteEndElement();
@@ -389,7 +389,7 @@ namespace WinApp.Estructuras.EstandarUbl
                         writer.WriteAttributeString("schemeName", "Tax Category Identifier");
                         writer.WriteAttributeString("schemeAgencyName", "United Nations Economic Commission for Europe");
 
-                        writer.WriteValue("S"); //VALOR OBTENIDO DE LA TABLA 5
+                        writer.WriteValue(taxTotal.TaxSubtotal.TaxCategory.Identifier); //VALOR OBTENIDO DE LA TABLA 5
                         writer.WriteEndElement();
                         #endregion ID
 
@@ -627,6 +627,21 @@ namespace WinApp.Estructuras.EstandarUbl
                 writer.WriteEndElement();
                 #endregion
 
+
+                #region CommodityClassification
+                if (invoiceLine.ItemClassificationCode != null)
+                {
+                    writer.WriteStartElement("cac:CommodityClassification");
+                    writer.WriteStartElement("cbc:ItemClassificationCode");
+                    writer.WriteAttributeString("listID", "UNSPSC");
+                    writer.WriteAttributeString("listAgencyName", "GS1 US");
+                    writer.WriteAttributeString("listName", "Item Classification");
+                    writer.WriteValue(invoiceLine.ItemClassificationCode);//82141601-SERVICIOS FOTOGRAFICOS, MONTAJE Y ENMARCADO	82141602 - MONTAJE DE EXPOSICION DE ARTICULOS
+                    writer.WriteEndElement();
+                    writer.WriteEndElement();
+                }
+                #endregion CommodityClassification
+                
 
                 writer.WriteEndElement();
                 #endregion

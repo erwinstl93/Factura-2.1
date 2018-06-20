@@ -2,28 +2,19 @@
 <Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:sac="urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ext:UBLExtensions>
     <ext:UBLExtension>
-      <ext:ExtensionContent>
-        <sac:AdditionalInformation>
-          <sac:AdditionalProperty>
-            <cbc:ID>1000</cbc:ID>
-            <cbc:Value>CERO CON 00/100</cbc:Value>
-          </sac:AdditionalProperty>
-          <sac:SUNATTransaction>
-            <cbc:ID>01</cbc:ID>
-          </sac:SUNATTransaction>
-        </sac:AdditionalInformation>
-      </ext:ExtensionContent>
-    </ext:UBLExtension>
-    <ext:UBLExtension>
       <ext:ExtensionContent />
     </ext:UBLExtension>
   </ext:UBLExtensions>
-  <cbc:UBLVersionID>2.0</cbc:UBLVersionID>
-  <cbc:CustomizationID>1.0</cbc:CustomizationID>
+  <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+  <cbc:CustomizationID>2.0</cbc:CustomizationID>
   <cbc:ID>FF11-00001</cbc:ID>
-  <cbc:IssueDate>2018-03-03</cbc:IssueDate>
-  <cbc:InvoiceTypeCode>01</cbc:InvoiceTypeCode>
-  <cbc:DocumentCurrencyCode>PEN</cbc:DocumentCurrencyCode>
+  <cbc:IssueDate>2018-06-20</cbc:IssueDate>
+  <cbc:IssueTime>11:49:56</cbc:IssueTime>
+  <cbc:DueDate>2018-06-20</cbc:DueDate>
+  <cbc:InvoiceTypeCode listID="01" listAgencyName="PE:SUNAT" listName="PE:SUNAT" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo01">01</cbc:InvoiceTypeCode>
+  <cbc:Note languageLocaleID="1000">CERO CON 00/100</cbc:Note>
+  <cbc:DocumentCurrencyCode listID="ISO 4217 Alpha" listName="Currency" listAgencyName="United Nations Economic Commission for Europe">PEN</cbc:DocumentCurrencyCode>
+  <cbc:LineCountNumeric />
   <cac:Signature>
     <cbc:ID>FF11-00001</cbc:ID>
     <cac:SignatoryParty>
@@ -41,43 +32,40 @@
     </cac:DigitalSignatureAttachment>
   </cac:Signature>
   <cac:AccountingSupplierParty>
-    <cbc:CustomerAssignedAccountID />
-    <cbc:AdditionalAccountID>6</cbc:AdditionalAccountID>
     <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID schemeID="6" schemeName="SUNAT:Identificador de Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06" />
+      </cac:PartyIdentification>
       <cac:PartyName>
-        <cbc:Name />
+        <cbc:Name><![CDATA[]]></cbc:Name>
       </cac:PartyName>
-      <cac:PostalAddress>
-        <cbc:ID />
-        <cbc:StreetName />
-        <cbc:CityName />
-        <cbc:CountrySubentity />
-        <cbc:District />
-        <cac:Country>
-          <cbc:IdentificationCode>PE</cbc:IdentificationCode>
-        </cac:Country>
-      </cac:PostalAddress>
       <cac:PartyLegalEntity>
-        <cbc:RegistrationName />
+        <cbc:RegistrationName><![CDATA[]]></cbc:RegistrationName>
+        <cac:RegistrationAddress>
+          <cbc:AddressTypeCode>0000</cbc:AddressTypeCode>
+        </cac:RegistrationAddress>
       </cac:PartyLegalEntity>
     </cac:Party>
   </cac:AccountingSupplierParty>
   <cac:AccountingCustomerParty>
-    <cbc:CustomerAssignedAccountID />
-    <cbc:AdditionalAccountID>6</cbc:AdditionalAccountID>
     <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID schemeID="6" schemeName="SUNAT:Identificador de Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06" />
+      </cac:PartyIdentification>
       <cac:PartyLegalEntity>
-        <cbc:RegistrationName />
+        <cbc:RegistrationName><![CDATA[]]></cbc:RegistrationName>
       </cac:PartyLegalEntity>
     </cac:Party>
   </cac:AccountingCustomerParty>
   <cac:TaxTotal>
     <cbc:TaxAmount currencyID="PEN">0.00</cbc:TaxAmount>
     <cac:TaxSubtotal>
+      <cbc:TaxableAmount currencyID="PEN">0.00</cbc:TaxableAmount>
       <cbc:TaxAmount currencyID="PEN">0.00</cbc:TaxAmount>
       <cac:TaxCategory>
+        <cbc:ID schemeID="UN/ECE 5305" schemeName="Tax Category Identifier" schemeAgencyName="United Nations Economic Commission for Europe">S</cbc:ID>
         <cac:TaxScheme>
-          <cbc:ID>1000</cbc:ID>
+          <cbc:ID schemeID="UN/ECE 5305" schemeAgencyID="6">1000</cbc:ID>
           <cbc:Name>IGV</cbc:Name>
           <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
         </cac:TaxScheme>

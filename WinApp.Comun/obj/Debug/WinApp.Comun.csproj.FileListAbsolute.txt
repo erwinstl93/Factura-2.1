@@ -20,3 +20,4 @@ C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Comun\bin\Debug\WinApp.Comun.pdb
 C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.csprojResolveAssemblyReference.cache
 C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.dll
 C:\Users\ERWIN\Desktop\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.pdb
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Comun\obj\Debug\WinApp.Comun.csprojResolveAssemblyReference.cache

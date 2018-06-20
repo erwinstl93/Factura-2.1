@@ -8,8 +8,8 @@
   <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
   <cbc:CustomizationID>2.0</cbc:CustomizationID>
   <cbc:ID>FNC1-00000001</cbc:ID>
-  <cbc:IssueDate>2018-06-19</cbc:IssueDate>
-  <cbc:IssueTime>19:36:41</cbc:IssueTime>
+  <cbc:IssueDate>2018-06-20</cbc:IssueDate>
+  <cbc:IssueTime>17:05:46</cbc:IssueTime>
   <cbc:Note languageLocaleID="1000">CINCUENTA Y UNO MIL SETECIENTOS TREINTA Y UNO CON 20/100</cbc:Note>
   <cbc:DocumentCurrencyCode>PEN</cbc:DocumentCurrencyCode>
   <cac:DiscrepancyResponse>
@@ -86,7 +86,12 @@
     <cbc:ID>1</cbc:ID>
     <cbc:CreditedQuantity unitCode="NIU">2000.00</cbc:CreditedQuantity>
     <cbc:LineExtensionAmount currencyID="PEN">43840.00</cbc:LineExtensionAmount>
-    <cac:PricingReference />
+    <cac:PricingReference>
+      <cac:AlternativeConditionPrice>
+        <cbc:PriceAmount currencyID="PEN">25.86</cbc:PriceAmount>
+        <cbc:PriceTypeCode>01</cbc:PriceTypeCode>
+      </cac:AlternativeConditionPrice>
+    </cac:PricingReference>
     <cac:TaxTotal>
       <cbc:TaxAmount currencyID="PEN">7891.20</cbc:TaxAmount>
       <cac:TaxSubtotal>

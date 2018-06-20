@@ -625,14 +625,17 @@ namespace WinApp.Estructuras.EstandarUbl
 
 
                 #region CommodityClassification
-                writer.WriteStartElement("cac:CommodityClassification");
-                writer.WriteStartElement("cbc:ItemClassificationCode");
-                writer.WriteAttributeString("listID", "UNSPSC"); //Codigo de identificacion de documento de cliente
-                writer.WriteAttributeString("listAgencyName", "GS1 US");
-                writer.WriteAttributeString("listName", "Item Classification");            
-                writer.WriteValue("82141601");//82141601-SERVICIOS FOTOGRAFICOS, MONTAJE Y ENMARCADO	82141602 - MONTAJE DE EXPOSICION DE ARTICULOS
-                writer.WriteEndElement();
-                writer.WriteEndElement();
+                if (creditNoteLine.ItemClassificationCode != null)
+                {
+                    writer.WriteStartElement("cac:CommodityClassification");
+                    writer.WriteStartElement("cbc:ItemClassificationCode");
+                    writer.WriteAttributeString("listID", "UNSPSC");
+                    writer.WriteAttributeString("listAgencyName", "GS1 US");
+                    writer.WriteAttributeString("listName", "Item Classification");
+                    writer.WriteValue(creditNoteLine.ItemClassificationCode);//82141601-SERVICIOS FOTOGRAFICOS, MONTAJE Y ENMARCADO	82141602 - MONTAJE DE EXPOSICION DE ARTICULOS
+                    writer.WriteEndElement();
+                    writer.WriteEndElement();
+                }
                 #endregion CommodityClassification
 
 

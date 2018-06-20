@@ -116,6 +116,7 @@ namespace WinApp.Xml
                 {
                     CustomerAssignedAccountId = documento.Emisor.NroDocumento,
                     AdditionalAccountId = documento.Emisor.TipoDocumento,
+                    CodDomicilioFiscal = documento.Emisor.CodDomicilioFiscal,
                     Party = new Party
                     {
                         PartyName = new PartyName
@@ -131,6 +132,7 @@ namespace WinApp.Xml
                             CityName = documento.Emisor.Provincia,
                             District = documento.Emisor.Distrito,
                             Country = new Country { IdentificationCode = "PE" }
+
                         },
                         PartyLegalEntity = new PartyLegalEntity
                         {
@@ -192,6 +194,7 @@ namespace WinApp.Xml
                             },
                             TaxCategory = new TaxCategory
                             {
+                                Identifier="S", //VALOR OBTENIDO DE LA TABLA 5
                                 TaxScheme = new TaxScheme
                                 {
                                     Id = "1000",
@@ -221,6 +224,7 @@ namespace WinApp.Xml
                         },
                         TaxCategory = new TaxCategory
                         {
+                            Identifier = "S", //VALOR OBTENIDO DE LA TABLA 5
                             TaxScheme = new TaxScheme
                             {
                                 Id = "2000",
@@ -249,6 +253,7 @@ namespace WinApp.Xml
                         },
                         TaxCategory = new TaxCategory
                         {
+                            Identifier = "S", //VALOR OBTENIDO DE LA TABLA 5
                             TaxScheme = new TaxScheme
                             {
                                 Id = "9999",
@@ -473,6 +478,7 @@ namespace WinApp.Xml
                 var linea = new InvoiceLine
                 {
                     Id = detalleDocumento.Id,
+                    ItemClassificationCode = detalleDocumento.ItemClassificationCode,
                     InvoicedQuantity = new InvoicedQuantity
                     {
                         UnitCode = detalleDocumento.UnidadMedida,
@@ -498,6 +504,7 @@ namespace WinApp.Xml
                         {
                             Id = detalleDocumento.PlacaVehiculo
                         }
+                        
                     },
                     Price = new Price
                     {
@@ -507,6 +514,7 @@ namespace WinApp.Xml
                             Value = detalleDocumento.PrecioUnitario
                         }
                     },
+                    
                 };
                 /* 16 - Afectación al IGV por ítem */
                 linea.TaxTotals.Add(new TaxTotal

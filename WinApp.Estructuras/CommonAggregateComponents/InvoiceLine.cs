@@ -26,6 +26,7 @@ namespace WinApp.Estructuras.CommonAggregateComponents
         public Item Item { get; set; }
 
         public Price Price { get; set; }
+        public string ItemClassificationCode { get; set; }
 
         public InvoiceLine()
         {
@@ -36,7 +37,7 @@ namespace WinApp.Estructuras.CommonAggregateComponents
             PricingReference = new PricingReference();
             AllowanceCharge = new AllowanceCharge();
             TaxTotals = new List<TaxTotal>();
-            Item = new Item();
+            Item = new Item();             
             Price = new Price();
         }
     }

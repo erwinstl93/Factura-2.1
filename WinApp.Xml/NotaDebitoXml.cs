@@ -37,8 +37,13 @@ namespace WinApp.Xml
                                             CurrencyId = documento.Moneda,
                                             Value = documento.Gravadas
                                         }
+
+                                    },
+                                    new AdditionalMonetaryTotal {
+                                        Percent= (documento.CalculoIgv * 100)
                                     }
                                 },
+
                                 AdditionalProperties = new List<AdditionalProperty>()
                                 {
                                     new AdditionalProperty
@@ -131,8 +136,8 @@ namespace WinApp.Xml
                         }
                     }
                 },
-                UblVersionId = "2.0",
-                CustomizationId = "1.0",
+                UblVersionId = "2.1",
+                CustomizationId = "2.0",
                 RequestedMonetaryTotal = new LegalMonetaryTotal
                 {
                     PayableAmount = new PayableAmount
@@ -150,6 +155,10 @@ namespace WinApp.Xml
                 {
                     new TaxTotal
                     {
+                        TaxableAmount = new PayableAmount{
+                            CurrencyId=documento.Moneda,
+                            Value=documento.Gravadas
+                        },
                         TaxAmount = new PayableAmount
                         {
                             CurrencyId = documento.Moneda,
@@ -212,6 +221,7 @@ namespace WinApp.Xml
                 var linea = new InvoiceLine
                 {
                     Id = detalleDocumento.Id,
+                    ItemClassificationCode=detalleDocumento.ItemClassificationCode,
                     DebitedQuantity = new InvoicedQuantity
                     {
                         UnitCode = detalleDocumento.UnidadMedida,
@@ -243,6 +253,16 @@ namespace WinApp.Xml
                         }
                     },
                 };
+                linea.PricingReference.AlternativeConditionPrices.Add(new AlternativeConditionPrice
+                {
+                    PriceAmount = new PayableAmount
+                    {
+                        CurrencyId = documento.Moneda,
+                        // Comprobamos que sea una operacion gratuita.
+                        Value = documento.Gratuitas > 0 ? 0 : detalleDocumento.PrecioReferencial
+                    },
+                    PriceTypeCode = detalleDocumento.TipoPrecio
+                });
                 /* 16 - Afectación al IGV por ítem */
                 linea.TaxTotals.Add(new TaxTotal
                 {
@@ -250,6 +270,11 @@ namespace WinApp.Xml
                     {
                         CurrencyId = documento.Moneda,
                         Value = detalleDocumento.Impuesto
+                    },                   
+                    TaxableAmount = new PayableAmount
+                    {
+                        CurrencyId = documento.Moneda,
+                        Value = detalleDocumento.TotalVenta
                     },
                     TaxSubtotal = new TaxSubtotal
                     {

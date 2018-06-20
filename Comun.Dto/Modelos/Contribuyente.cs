@@ -33,5 +33,7 @@ namespace WinApp.Comun.Dto.Modelos
 
         [JsonProperty(Order = 10)]
         public string Distrito { get; set; }
+
+        public string CodDomicilioFiscal { get; set; }
     }
 }

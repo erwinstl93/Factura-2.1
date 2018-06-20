@@ -121,6 +121,7 @@
             this.kryptonButton9.Size = new System.Drawing.Size(137, 25);
             this.kryptonButton9.TabIndex = 5;
             this.kryptonButton9.Values.Text = "COM. DE BAJA";
+            this.kryptonButton9.Click += new System.EventHandler(this.kryptonButton9_Click);
             // 
             // kryptonButton10
             // 
@@ -137,6 +138,7 @@
             this.kryptonButton11.Size = new System.Drawing.Size(137, 25);
             this.kryptonButton11.TabIndex = 7;
             this.kryptonButton11.Values.Text = "RESUMEN DIARIO";
+            this.kryptonButton11.Click += new System.EventHandler(this.kryptonButton11_Click);
             // 
             // kryptonButton12
             // 

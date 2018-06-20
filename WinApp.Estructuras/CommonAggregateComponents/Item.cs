@@ -5,7 +5,7 @@ namespace WinApp.Estructuras.CommonAggregateComponents
     [Serializable]
     public class Item
     {
-        public string Description { get; set; }
+        public string Description { get; set; }        
 
         public SellersItemIdentification SellersItemIdentification { get; set; }
 

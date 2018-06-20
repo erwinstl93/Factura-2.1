@@ -8,13 +8,13 @@
   <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
   <cbc:CustomizationID>2.0</cbc:CustomizationID>
   <cbc:ID>F001-00000001</cbc:ID>
-  <cbc:IssueDate>2018-06-19</cbc:IssueDate>
-  <cbc:IssueTime>18:35:29</cbc:IssueTime>
-  <cbc:DueDate>2018-06-19</cbc:DueDate>
+  <cbc:IssueDate>2018-06-20</cbc:IssueDate>
+  <cbc:IssueTime>17:12:27</cbc:IssueTime>
+  <cbc:DueDate>2018-06-20</cbc:DueDate>
   <cbc:InvoiceTypeCode listID="0101" listAgencyName="PE:SUNAT" listName="PE:SUNAT" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo01">01</cbc:InvoiceTypeCode>
-  <cbc:Note languageLocaleID="1000">CINCUENTA Y UNO MIL SETECIENTOS TREINTA Y UNO CON 20/100</cbc:Note>
+  <cbc:Note languageLocaleID="1000">CIENTO TRES MIL CUATROCIENTOS SESENTA Y DOS CON 40/100</cbc:Note>
   <cbc:DocumentCurrencyCode listID="ISO 4217 Alpha" listName="Currency" listAgencyName="United Nations Economic Commission for Europe">PEN</cbc:DocumentCurrencyCode>
-  <cbc:LineCountNumeric>1</cbc:LineCountNumeric>
+  <cbc:LineCountNumeric>2</cbc:LineCountNumeric>
   <cac:Signature>
     <cbc:ID>F001-00000001</cbc:ID>
     <cac:SignatoryParty>
@@ -58,10 +58,10 @@
     </cac:Party>
   </cac:AccountingCustomerParty>
   <cac:TaxTotal>
-    <cbc:TaxAmount currencyID="PEN">7891.20</cbc:TaxAmount>
+    <cbc:TaxAmount currencyID="PEN">15782.40</cbc:TaxAmount>
     <cac:TaxSubtotal>
-      <cbc:TaxableAmount currencyID="PEN">43840.00</cbc:TaxableAmount>
-      <cbc:TaxAmount currencyID="PEN">7891.20</cbc:TaxAmount>
+      <cbc:TaxableAmount currencyID="PEN">87680.00</cbc:TaxableAmount>
+      <cbc:TaxAmount currencyID="PEN">15782.40</cbc:TaxAmount>
       <cac:TaxCategory>
         <cbc:ID schemeID="UN/ECE 5305" schemeName="Tax Category Identifier" schemeAgencyName="United Nations Economic Commission for Europe">S</cbc:ID>
         <cac:TaxScheme>
@@ -73,10 +73,47 @@
     </cac:TaxSubtotal>
   </cac:TaxTotal>
   <cac:LegalMonetaryTotal>
-    <cbc:PayableAmount currencyID="PEN">51731.20</cbc:PayableAmount>
+    <cbc:PayableAmount currencyID="PEN">103462.40</cbc:PayableAmount>
   </cac:LegalMonetaryTotal>
   <cac:InvoiceLine>
     <cbc:ID>1</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="NIU" unitCodeListID="UN/ECE rec 20" unitCodeListAgencyName="United Nations Economic Commission forEurope">2000.00</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="PEN">43840.00</cbc:LineExtensionAmount>
+    <cac:PricingReference>
+      <cac:AlternativeConditionPrice>
+        <cbc:PriceAmount currencyID="PEN">25.86</cbc:PriceAmount>
+        <cbc:PriceTypeCode listName="SUNAT:Indicador de Tipo de Precio" listAgencyName="PE:SUNAT" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo16">01</cbc:PriceTypeCode>
+      </cac:AlternativeConditionPrice>
+    </cac:PricingReference>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="PEN">7891.20</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="PEN">43840.00</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="PEN">7891.20</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:ID schemeID="UN/ECE 5305" schemeName="Tax Category Identifier" schemeAgencyName="United Nations Economic Commission for Europe">S</cbc:ID>
+          <cbc:Percent>18.00</cbc:Percent>
+          <cbc:TaxExemptionReasonCode listAgencyName="PE:SUNAT" listName="SUNAT:Codigo de Tipo de Afectación del IGV" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo07">10</cbc:TaxExemptionReasonCode>
+          <cac:TaxScheme>
+            <cbc:ID>1000</cbc:ID>
+            <cbc:Name>IGV</cbc:Name>
+            <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>PRODUCTO PRUEBA</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>COD001</cbc:ID>
+      </cac:SellersItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="PEN">21.92</cbc:PriceAmount>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>2</cbc:ID>
     <cbc:InvoicedQuantity unitCode="NIU" unitCodeListID="UN/ECE rec 20" unitCodeListAgencyName="United Nations Economic Commission forEurope">2000.00</cbc:InvoicedQuantity>
     <cbc:LineExtensionAmount currencyID="PEN">43840.00</cbc:LineExtensionAmount>
     <cac:PricingReference>

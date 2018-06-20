@@ -108,7 +108,8 @@ namespace WinApp
                 Distrito = "PIURA",
                 NombreLegal = "PIURAMAQ S.R.L.",
                 NombreComercial = "",
-                Ubigeo = "200101"
+                Ubigeo = "200101",
+                CodDomicilioFiscal = "0000" //Código de cuatro dígitos asignado por SUNAT
 
             };
 
@@ -121,24 +122,30 @@ namespace WinApp
                 Direccion = "JR. TUMBES NRO. 100 CENTRO PIURA (A 1 CUADRA DE AV. LIBERTAD CON BOLOGNESI)"
             };
 
-            var dtsItems = new DetalleDocumento
+            for (var i = 1; i < 3; i++)
             {
-                Id = 1,
-                Cantidad = 2000,
-                UnidadMedida = "NIU",
-                CodigoItem = "COD001",
-                Descripcion = "PRODUCTO PRUEBA",
-                PrecioUnitario = 21.92m,
-                PrecioReferencial = 25.86m,
-                TipoPrecio = "01",
-                TipoImpuesto = "10",
-                OtroImpuesto = 0,
-                Descuento = 0,
-                Suma = 2000 * 21.92m, //_detalle.PrecioUnitario * _detalle.Cantidad
-                Impuesto = (2000 * 21.92m) * _documento.CalculoIgv, //_detalle.Suma * _documento.CalculoIgv
-                ImpuestoSelectivo = 0, //_detalle.Suma * _documento.CalculoIsc;
-                TotalVenta = (2000 * 21.92m) - 0 //_detalle.Suma - _detalle.Descuento
-            };
+                var dtsItems = new DetalleDocumento
+                {
+                    Id = i,
+                    Cantidad = 2000,
+                    UnidadMedida = "NIU",
+                    CodigoItem = "COD001",
+                    //ItemClassificationCode = "82141601",// Este código será obligatorio para el 1-1-2019 - catálogo N° 15 del Anexo N° 8
+                    Descripcion = "PRODUCTO PRUEBA",
+                    PrecioUnitario = 21.92m,
+                    PrecioReferencial = 25.86m,
+                    TipoPrecio = "01",
+                    TipoImpuesto = "10",
+                    OtroImpuesto = 0,
+                    Descuento = 0,
+                    Suma = 2000 * 21.92m, //_detalle.PrecioUnitario * _detalle.Cantidad
+                    Impuesto = (2000 * 21.92m) * _documento.CalculoIgv, //_detalle.Suma * _documento.CalculoIgv
+                    ImpuestoSelectivo = 0, //_detalle.Suma * _documento.CalculoIsc;
+                    TotalVenta = (2000 * 21.92m) - 0 //_detalle.Suma - _detalle.Descuento
+                };
+                //Agregamos Detalle
+                _documento.Items.Add(dtsItems);
+            }
 
             _documento.IdDocumento = "F001-00000001";
             _documento.TipoDocumento = "01";
@@ -147,8 +154,7 @@ namespace WinApp
             _documento.FechaEmision = DateTime.Today.ToShortDateString();
             _documento.Moneda = "PEN";
             _documento.TipoOperacion = "0101"; //Venta interna
-            //Agregamos Detalle
-            _documento.Items.Add(dtsItems);
+           
             CalcularTotales();
         }
 
@@ -183,6 +189,7 @@ namespace WinApp
                 Cantidad = 2000,
                 UnidadMedida = "NIU",
                 CodigoItem = "COD001",
+                ItemClassificationCode = "82141601",
                 Descripcion = "PRODUCTO PRUEBA",
                 PrecioUnitario = 21.92m,
                 PrecioReferencial = 25.86m,
@@ -202,7 +209,7 @@ namespace WinApp
             _documento.Receptor = dtsReceptor;
             _documento.FechaEmision = DateTime.Today.ToShortDateString();
             _documento.Moneda = "PEN";
-            _documento.TipoOperacion = "01";
+            _documento.TipoOperacion = "0101";
             //Agregamos Detalle
             _documento.Items.Add(dtsItems);
             CalcularTotales();
@@ -228,23 +235,22 @@ namespace WinApp
         {
             var dtsEmisor = new Contribuyente()
             {
-                NroDocumento = "20525911129",
-                TipoDocumento = "06",
-                NombreLegal = "PUBLIARTE S.R.L",
-                NombreComercial = "",
-                Direccion = "JR. CALLAO NRO. 778 INT. 001 (AL LADO DE TALLER MECANICO)",
+                NroDocumento = "20525411401",
+                TipoDocumento = "6",
+                Direccion = "MZA. 228 LOTE. 06 ZONA INDUSTRIAL  PIURA - PIURA - PIURA",
                 Departamento = "PIURA",
                 Provincia = "PIURA",
                 Distrito = "PIURA",
-                Ubigeo = "190101",
-                Urbanizacion = ""
+                NombreLegal = "PIURAMAQ S.R.L.",
+                NombreComercial = "",
+                Ubigeo = "200101"
 
             };
 
             var dtsReceptor = new Contribuyente()
             {
                 NroDocumento = "10472308616",
-                TipoDocumento = "06",
+                TipoDocumento = "6",
                 NombreLegal = "MEJIA MOSCOL JUAN JOSE",
                 NombreComercial = "",
                 Direccion = "JR. TUMBES NRO. 100 CENTRO PIURA (A 1 CUADRA DE AV. LIBERTAD CON BOLOGNESI)"
@@ -253,29 +259,30 @@ namespace WinApp
             var dtsItems = new DetalleDocumento
             {
                 Id = 1,
-                Cantidad = 1,
+                Cantidad = 2000,
                 UnidadMedida = "NIU",
                 CodigoItem = "COD001",
+                ItemClassificationCode = "82141601",
                 Descripcion = "PRODUCTO PRUEBA",
-                PrecioUnitario = 10.50m,
-                PrecioReferencial = 0,
+                PrecioUnitario = 21.92m,
+                PrecioReferencial = 25.86m,
                 TipoPrecio = "01",
                 TipoImpuesto = "10",
                 OtroImpuesto = 0,
                 Descuento = 0,
-                Suma = 1 * 10.50m, //_detalle.PrecioUnitario * _detalle.Cantidad
-                Impuesto = (1 * 10.50m) * _documento.CalculoIgv, //_detalle.Suma * _documento.CalculoIgv
+                Suma = 2000 * 21.92m, //_detalle.PrecioUnitario * _detalle.Cantidad
+                Impuesto = (2000 * 21.92m) * _documento.CalculoIgv, //_detalle.Suma * _documento.CalculoIgv
                 ImpuestoSelectivo = 0, //_detalle.Suma * _documento.CalculoIsc;
-                TotalVenta = (1 * 10.50m) - 0 //_detalle.Suma - _detalle.Descuento
+                TotalVenta = (2000 * 21.92m) - 0 //_detalle.Suma - _detalle.Descuento
             };
 
-            _documento.IdDocumento = "ND01-00000001";
+            _documento.IdDocumento = "FND1-00000001";
             _documento.TipoDocumento = "08";
             _documento.Emisor = dtsEmisor;
             _documento.Receptor = dtsReceptor;
             _documento.FechaEmision = DateTime.Today.ToShortDateString();
             _documento.Moneda = "PEN";
-            _documento.TipoOperacion = "01";
+            _documento.TipoOperacion = "0101";
             //Agregamos Detalle
             _documento.Items.Add(dtsItems);
             CalcularTotales();
@@ -520,6 +527,16 @@ namespace WinApp
             {
                 Cursor = Cursors.Default;
             }
+        }
+
+        private void kryptonButton9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonButton11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

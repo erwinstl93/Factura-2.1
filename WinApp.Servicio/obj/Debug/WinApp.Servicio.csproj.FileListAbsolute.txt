@@ -18,3 +18,4 @@ D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Servic
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Servicio\obj\Debug\WinApp.Servicio.csproj.CoreCompileInputs.cache
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Servicio\obj\Debug\WinApp.Servicio.dll
 D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Servicio\obj\Debug\WinApp.Servicio.pdb
+D:\ERWIN\FACTURACION COMPLETA ERWIN\FACTURACION XML 2.1\ProjectCPE\WinApp.Servicio\obj\Debug\WinApp.Servicio.csprojResolveAssemblyReference.cache

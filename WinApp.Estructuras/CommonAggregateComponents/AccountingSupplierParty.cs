@@ -9,6 +9,8 @@ namespace WinApp.Estructuras.CommonAggregateComponents
 
         public string AdditionalAccountId { get; set; }
 
+        public string CodDomicilioFiscal { get; set; }
+
         public Party Party { get; set; }
     }
 }

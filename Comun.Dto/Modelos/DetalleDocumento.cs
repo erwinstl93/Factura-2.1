@@ -42,6 +42,8 @@ namespace WinApp.Comun.Dto.Modelos
 
         public string PlacaVehiculo { get; set; }
 
+        public string ItemClassificationCode { get; set; }
+
         [JsonProperty(Required = Required.Always)]
         public decimal TotalVenta { get; set; }
 
