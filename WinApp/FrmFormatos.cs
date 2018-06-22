@@ -122,7 +122,7 @@ namespace WinApp
                 Direccion = "JR. TUMBES NRO. 100 CENTRO PIURA (A 1 CUADRA DE AV. LIBERTAD CON BOLOGNESI)"
             };
 
-            for (var i = 1; i < 3; i++)
+            for (var i = 1; i < 2; i++)
             {
                 var dtsItems = new DetalleDocumento
                 {
@@ -436,7 +436,7 @@ namespace WinApp
         {
             try
             {
-               // _documento.IdDocumento = "F001-00000001"; //Probar
+                //_documento.IdDocumento = "F001-00000001"; //Probar
 
                 if (string.IsNullOrEmpty(_documento.IdDocumento))
                 throw new InvalidOperationException("La Serie y el Correlativo no pueden estar vacíos");

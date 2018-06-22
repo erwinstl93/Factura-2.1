@@ -171,41 +171,78 @@ namespace WinApp.Xml
                         Value = documento.DescuentoGlobal
                     }
                 },
-                TaxTotals = new List<TaxTotal>
+                TaxTotals = new List<TaxTotal>()
+            };
+            if (documento.Gravadas > 0)
+            {
+                invoice.TaxTotals.Add(new TaxTotal
                 {
-                    new TaxTotal
+                    //Agregado para la nueva version
+                    TaxableAmount = new PayableAmount
                     {
-                        //Agregado para la nueva version
-                        TaxableAmount= new PayableAmount{
-                            CurrencyId=documento.Moneda,
-                            Value=documento.Gravadas
-                        },
+                        CurrencyId = documento.Moneda,
+                        Value = documento.Gravadas
+                    },
+                    TaxAmount = new PayableAmount
+                    {
+                        CurrencyId = documento.Moneda,
+                        Value = documento.TotalIgv
+                    },
+                    TaxSubtotal = new TaxSubtotal
+                    {
                         TaxAmount = new PayableAmount
                         {
                             CurrencyId = documento.Moneda,
-                            Value = documento.TotalIgv
+                            Value = documento.TotalIgv,
                         },
-                        TaxSubtotal = new TaxSubtotal
+                        TaxCategory = new TaxCategory
                         {
-                            TaxAmount = new PayableAmount
+                            Identifier = "S", //VALOR OBTENIDO DE LA TABLA 5
+                            TaxScheme = new TaxScheme
                             {
-                                CurrencyId = documento.Moneda,
-                                Value = documento.TotalIgv,
-                            },
-                            TaxCategory = new TaxCategory
-                            {
-                                Identifier="S", //VALOR OBTENIDO DE LA TABLA 5
-                                TaxScheme = new TaxScheme
-                                {
-                                    Id = "1000",
-                                    Name = "IGV",
-                                    TaxTypeCode = "VAT"
-                                }
+                                Id = "1000",
+                                Name = "IGV",
+                                TaxTypeCode = "VAT"
                             }
                         }
                     }
-                }
-            };
+                });
+            }
+            if(documento.Exoneradas > 0)
+            {
+                invoice.TaxTotals.Add(new TaxTotal
+                {
+
+                    TaxableAmount = new PayableAmount
+                    {
+                        CurrencyId = documento.Moneda,
+                        Value = documento.Exoneradas
+                    },
+                    TaxAmount = new PayableAmount
+                    {
+                        CurrencyId = documento.Moneda,
+                        Value = documento.TotalIgv
+                    },
+                    TaxSubtotal = new TaxSubtotal
+                    {
+                        TaxAmount = new PayableAmount
+                        {
+                            CurrencyId = documento.Moneda,
+                            Value = documento.TotalIgv,
+                        },
+                        TaxCategory = new TaxCategory
+                        {
+                            Identifier = "E",
+                            TaxScheme = new TaxScheme
+                            {
+                                Id = "9997",
+                                Name = "EXO",
+                                TaxTypeCode = "VAT"
+                            }
+                        }
+                    }
+                });
+            }
             if (documento.TotalIsc > 0)
             {
                 invoice.TaxTotals.Add(new TaxTotal
@@ -517,38 +554,79 @@ namespace WinApp.Xml
                     
                 };
                 /* 16 - Afectación al IGV por ítem */
-                linea.TaxTotals.Add(new TaxTotal
+                if (documento.Gravadas > 0)
                 {
-                    TaxAmount = new PayableAmount
-                    {
-                        CurrencyId = documento.Moneda,
-                        Value = detalleDocumento.Impuesto
-                    },
-                    //Agregado para la nueva version
-                    TaxableAmount = new PayableAmount
-                    {
-                        CurrencyId = documento.Moneda,
-                        Value = detalleDocumento.TotalVenta
-                    },
-                    TaxSubtotal = new TaxSubtotal
+                    linea.TaxTotals.Add(new TaxTotal
                     {
                         TaxAmount = new PayableAmount
                         {
                             CurrencyId = documento.Moneda,
                             Value = detalleDocumento.Impuesto
                         },
-                        TaxCategory = new TaxCategory
+                        //Agregado para la nueva version
+                        TaxableAmount = new PayableAmount
                         {
-                            TaxExemptionReasonCode = detalleDocumento.TipoImpuesto,
-                            TaxScheme = new TaxScheme()
+                            CurrencyId = documento.Moneda,
+                            Value = detalleDocumento.TotalVenta
+                        },
+                        TaxSubtotal = new TaxSubtotal
+                        {
+                            TaxAmount = new PayableAmount
                             {
-                                Id = "1000",
-                                Name = "IGV",
-                                TaxTypeCode = "VAT"
+                                CurrencyId = documento.Moneda,
+                                Value = detalleDocumento.Impuesto
+                            },
+                            TaxCategory = new TaxCategory
+                            {
+                                Identifier = "S",
+                                TaxExemptionReasonCode = detalleDocumento.TipoImpuesto,
+                                TaxScheme = new TaxScheme()
+                                {
+                                    Id = "1000",
+                                    Name = "IGV",
+                                    TaxTypeCode = "VAT"
+                                }
                             }
                         }
-                    }
-                });
+                    });
+                }
+                /* Exoneradas */
+                if (documento.Exoneradas > 0)
+                {
+                    linea.TaxTotals.Add(new TaxTotal
+                    {
+                        TaxAmount = new PayableAmount
+                        {
+                            CurrencyId = documento.Moneda,
+                            Value = detalleDocumento.Impuesto
+                        },
+                        //Agregado para la nueva version
+                        TaxableAmount = new PayableAmount
+                        {
+                            CurrencyId = documento.Moneda,
+                            Value = detalleDocumento.TotalVenta
+                        },
+                        TaxSubtotal = new TaxSubtotal
+                        {
+                            TaxAmount = new PayableAmount
+                            {
+                                CurrencyId = documento.Moneda,
+                                Value = detalleDocumento.Impuesto
+                            },
+                            TaxCategory = new TaxCategory
+                            {
+                                Identifier = "E",
+                                TaxExemptionReasonCode = detalleDocumento.TipoImpuesto,
+                                TaxScheme = new TaxScheme()
+                                {
+                                    Id = "9997",
+                                    Name = "EXO",
+                                    TaxTypeCode = "VAT"
+                                }
+                            }
+                        }
+                    });
+                }
 
                 /* 17 - Sistema de ISC por ítem */
                 if (detalleDocumento.ImpuestoSelectivo > 0)

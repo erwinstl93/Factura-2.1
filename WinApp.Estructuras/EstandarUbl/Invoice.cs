@@ -572,7 +572,7 @@ namespace WinApp.Estructuras.EstandarUbl
                         writer.WriteAttributeString("schemeName", "Tax Category Identifier");
                         writer.WriteAttributeString("schemeAgencyName", "United Nations Economic Commission for Europe");
 
-                        writer.WriteValue("S"); //VALOR OBTENIDO DE LA TABLA 5
+                        writer.WriteValue(taxTotal.TaxSubtotal.TaxCategory.Identifier); //VALOR OBTENIDO DE LA TABLA 5
                         writer.WriteEndElement();
                         #endregion ID
 
@@ -592,7 +592,16 @@ namespace WinApp.Estructuras.EstandarUbl
                         {
                             writer.WriteStartElement("cac:TaxScheme");
 
-                            writer.WriteElementString("cbc:ID", taxTotal.TaxSubtotal.TaxCategory.TaxScheme.Id);
+                            // writer.WriteElementString("cbc:ID", taxTotal.TaxSubtotal.TaxCategory.TaxScheme.Id);
+                            #region ID
+                            writer.WriteStartElement("cbc:ID");
+                            writer.WriteAttributeString("schemeID", "UN/ECE 5153");
+                            writer.WriteAttributeString("schemeName", "Tax Scheme Identifier");
+                            writer.WriteAttributeString("schemeAgencyName", "United Nations Economic Commission for Europe");
+
+                            writer.WriteValue(taxTotal.TaxSubtotal.TaxCategory.TaxScheme.Id); //VALOR OBTENIDO DE LA TABLA 5
+                            writer.WriteEndElement();
+                            #endregion ID
                             writer.WriteElementString("cbc:Name", taxTotal.TaxSubtotal.TaxCategory.TaxScheme.Name);
                             writer.WriteElementString("cbc:TaxTypeCode", taxTotal.TaxSubtotal.TaxCategory.TaxScheme.TaxTypeCode);
 

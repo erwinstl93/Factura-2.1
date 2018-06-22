@@ -22,7 +22,7 @@ namespace WinApp.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace WinApp.Properties {
         ///   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WinApp.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace WinApp.Properties {
         ///   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace WinApp.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _new {
+        public static System.Drawing.Bitmap _new {
             get {
                 object obj = ResourceManager.GetObject("_new", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace WinApp.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cancel {
+        public static System.Drawing.Bitmap cancel {
             get {
                 object obj = ResourceManager.GetObject("cancel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +83,7 @@ namespace WinApp.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap delete {
+        public static System.Drawing.Bitmap delete {
             get {
                 object obj = ResourceManager.GetObject("delete", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +93,7 @@ namespace WinApp.Properties {
         /// <summary>
         ///   Busca una cadena traducida similar a Certificados Digitales (*.cer;*.pfx;*.p7b)|*.cer;*.pfx;*.p7b.
         /// </summary>
-        internal static string formatosCertificado {
+        public static string formatosCertificado {
             get {
                 return ResourceManager.GetString("formatosCertificado", resourceCulture);
             }
@@ -102,7 +102,7 @@ namespace WinApp.Properties {
         /// <summary>
         ///   Busca una cadena traducida similar a Documentos XML sin firma (*.xml)|*.xml.
         /// </summary>
-        internal static string formatosXml {
+        public static string formatosXml {
             get {
                 return ResourceManager.GetString("formatosXml", resourceCulture);
             }
@@ -111,7 +111,7 @@ namespace WinApp.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap iconcopy {
+        public static System.Drawing.Bitmap iconcopy {
             get {
                 object obj = ResourceManager.GetObject("iconcopy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -121,7 +121,7 @@ namespace WinApp.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap iconxml {
+        public static System.Drawing.Bitmap iconxml {
             get {
                 object obj = ResourceManager.GetObject("iconxml", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -131,7 +131,7 @@ namespace WinApp.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ok {
+        public static System.Drawing.Bitmap ok {
             get {
                 object obj = ResourceManager.GetObject("ok", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -141,7 +141,7 @@ namespace WinApp.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
         /// </summary>
-        internal static System.Drawing.Icon openinvoiceperulogo {
+        public static System.Drawing.Icon openinvoiceperulogo {
             get {
                 object obj = ResourceManager.GetObject("openinvoiceperulogo", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -151,7 +151,7 @@ namespace WinApp.Properties {
         /// <summary>
         ///   Busca una cadena traducida similar a Proceso enviado a SUNAT correctamente!.
         /// </summary>
-        internal static string procesoCorrecto {
+        public static string procesoCorrecto {
             get {
                 return ResourceManager.GetString("procesoCorrecto", resourceCulture);
             }
@@ -160,7 +160,7 @@ namespace WinApp.Properties {
         /// <summary>
         ///   Busca una cadena traducida similar a Seleccione un Certificado.
         /// </summary>
-        internal static string seleccioneCertificado {
+        public static string seleccioneCertificado {
             get {
                 return ResourceManager.GetString("seleccioneCertificado", resourceCulture);
             }
@@ -169,7 +169,7 @@ namespace WinApp.Properties {
         /// <summary>
         ///   Busca una cadena traducida similar a Seleccione un Documento XML SUNAT.
         /// </summary>
-        internal static string seleccionXml {
+        public static string seleccionXml {
             get {
                 return ResourceManager.GetString("seleccionXml", resourceCulture);
             }
